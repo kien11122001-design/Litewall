@@ -1,0 +1,620 @@
+PS C:\dev\litewall> cargo clippy --all-targets -- -D warnings
+>> cargo fmt --check
+>>
+>> .\target\release\litewall.exe
+>> .\target\release\litewall.exe
+>> Get-Process litewall | Select Id, CPU, WS, PM, Threads
+>> Start-Sleep 10
+>> Get-Process litewall | Select Id, CPU
+>> .\target\release\litewall.exe --quit
+>> Get-Content "$env:LOCALAPPDATA\LiteWall\logs\litewall.log" -Tail 8
+    Checking equivalent v1.0.3
+    Checking hashbrown v0.17.1
+    Checking winnow v0.7.15
+    Checking toml_write v0.1.2
+    Checking log v0.4.35
+    Checking serde_core v1.0.229
+   Compiling litewall v0.1.0 (C:\dev\litewall)
+    Checking indexmap v2.14.2
+    Checking serde v1.0.229
+    Checking toml_datetime v0.6.11
+    Checking serde_spanned v0.6.9
+    Checking toml_edit v0.22.27
+    Checking toml v0.8.23
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.70s
+Diff in \\?\C:\dev\litewall\src\core\config.rs:84:
+ }
+ impl Default for AudioConfig {
+     fn default() -> Self {
+-        Self { source: None, volume: 40 }
++        Self {
++            source: None,
++            volume: 40,
++        }
+     }
+ }
+ impl Default for PauseConfig {
+Diff in \\?\C:\dev\litewall\src\core\config.rs:120:
+     pub fn sanitize(&mut self) {
+         self.audio.volume = self.audio.volume.min(100);
+         let t = self.pause.coverage_threshold;
+-        self.pause.coverage_threshold = if t.is_finite() { t.clamp(0.1, 1.0) } else { 0.9 };
++        self.pause.coverage_threshold = if t.is_finite() {
++            t.clamp(0.1, 1.0)
++        } else {
++            0.9
++        };
+     }
+ }
+
+Diff in \\?\C:\dev\litewall\src\core\config.rs:135:
+         match self {
+             ConfigError::Parse(e) => write!(f, "config parse error: {e}"),
+             ConfigError::UnsupportedVersion(v) => {
+-                write!(f, "config version {v} is newer than supported ({CURRENT_VERSION})")
++                write!(
++                    f,
++                    "config version {v} is newer than supported ({CURRENT_VERSION})"
++                )
+             }
+         }
+     }
+Diff in \\?\C:\dev\litewall\src\core\config.rs:160:
+
+ /// Parse + migrate + sanitize. Missing `version` is treated as 1.
+ pub fn parse(text: &str) -> Result<Config, ConfigError> {
+-    let mut value: toml::Value = toml::from_str(text).map_err(|e| ConfigError::Parse(e.to_string()))?;
+-    let version =
+-        value.get("version").and_then(|v| v.as_integer()).map_or(1, |v| v.clamp(1, u32::MAX as i64) as u32);
++    let mut value: toml::Value =
++        toml::from_str(text).map_err(|e| ConfigError::Parse(e.to_string()))?;
++    let version = value
++        .get("version")
++        .and_then(|v| v.as_integer())
++        .map_or(1, |v| v.clamp(1, u32::MAX as i64) as u32);
+     if version > CURRENT_VERSION {
+         return Err(ConfigError::UnsupportedVersion(version));
+     }
+Diff in \\?\C:\dev\litewall\src\core\config.rs:169:
+     run_migrations(&mut value, version, CURRENT_VERSION, MIGRATIONS);
+-    let mut cfg: Config = value.try_into().map_err(|e: toml::de::Error| ConfigError::Parse(e.to_string()))?;
++    let mut cfg: Config = value
++        .try_into()
++        .map_err(|e: toml::de::Error| ConfigError::Parse(e.to_string()))?;
+     cfg.version = CURRENT_VERSION;
+     cfg.sanitize();
+     Ok(cfg)
+Diff in \\?\C:\dev\litewall\src\core\config.rs:278:
+         assert_eq!(c.monitors[0].zoom, ZoomMode::Fill);
+         assert_eq!(
+             c.monitors[1].zoom,
+-            ZoomMode::Custom { zoom_log2: 0.15, pan_x: 0.0, pan_y: -0.05, align_x: 0.0, align_y: 0.0 }
++            ZoomMode::Custom {
++                zoom_log2: 0.15,
++                pan_x: 0.0,
++                pan_y: -0.05,
++                align_x: 0.0,
++                align_y: 0.0
++            }
+         );
+         let a = MonitorId::new("MONITOR\\DEL4177\\{x}");
+         let b = MonitorId::new("MONITOR\\GSM5B09\\{y}");
+Diff in \\?\C:\dev\litewall\src\core\config.rs:285:
+         assert_eq!(c.resolved_file(&a), Some(Path::new("D:\\Videos\\rain.mp4")));
+-        assert_eq!(c.resolved_file(&b), Some(Path::new("D:\\Videos\\forest_1080.mp4")));
+-        assert_eq!(c.resolved_file(&MonitorId::new("other")), Some(Path::new("D:\\Videos\\rain.mp4")));
++        assert_eq!(
++            c.resolved_file(&b),
++            Some(Path::new("D:\\Videos\\forest_1080.mp4"))
++        );
++        assert_eq!(
++            c.resolved_file(&MonitorId::new("other")),
++            Some(Path::new("D:\\Videos\\rain.mp4"))
++        );
+     }
+
+     #[test]
+Diff in \\?\C:\dev\litewall\src\core\config.rs:301:
+     #[test]
+     fn empty_file_gives_defaults_and_missing_version_is_v1() {
+         assert_eq!(parse("").unwrap(), Config::default());
+-        assert!(parse("[general]\nautostart = true\n").unwrap().general.autostart);
++        assert!(
++            parse("[general]\nautostart = true\n")
++                .unwrap()
++                .general
++                .autostart
++        );
+     }
+
+     #[test]
+Diff in \\?\C:\dev\litewall\src\core\config.rs:308:
+     fn unknown_keys_are_ignored_and_values_sanitised() {
+-        let c = parse("mystery = 1\n[audio]\nvolume = 250\n[pause]\ncoverage_threshold = 5.0\n").unwrap();
++        let c = parse("mystery = 1\n[audio]\nvolume = 250\n[pause]\ncoverage_threshold = 5.0\n")
++            .unwrap();
+         assert_eq!(c.audio.volume, 100);
+         assert_eq!(c.pause.coverage_threshold, 1.0);
+     }
+Diff in \\?\C:\dev\litewall\src\core\config.rs:313:
+
+     #[test]
+     fn newer_version_is_rejected_and_garbage_is_a_parse_error() {
+-        assert_eq!(parse("version = 99\n"), Err(ConfigError::UnsupportedVersion(99)));
+-        assert!(matches!(parse("this is [not toml"), Err(ConfigError::Parse(_))));
+-        assert!(matches!(parse("[audio]\nvolume = \"loud\"\n"), Err(ConfigError::Parse(_))));
++        assert_eq!(
++            parse("version = 99\n"),
++            Err(ConfigError::UnsupportedVersion(99))
++        );
++        assert!(matches!(
++            parse("this is [not toml"),
++            Err(ConfigError::Parse(_))
++        ));
++        assert!(matches!(
++            parse("[audio]\nvolume = \"loud\"\n"),
++            Err(ConfigError::Parse(_))
++        ));
+     }
+
+     #[test]
+Diff in \\?\C:\dev\litewall\src\core\config.rs:327:
+             }
+         }
+         fn v2_to_v3(v: &mut toml::Value) {
+-            v.as_table_mut().unwrap().insert("added_in_v3".into(), toml::Value::Boolean(true));
++            v.as_table_mut()
++                .unwrap()
++                .insert("added_in_v3".into(), toml::Value::Boolean(true));
+         }
+         let mut val: toml::Value = toml::from_str("version = 1\nold_name = 7\n").unwrap();
+         run_migrations(&mut val, 1, 3, &[v1_to_v2, v2_to_v3]);
+Diff in \\?\C:\dev\litewall\src\core\config.rs:360:
+     fn missing_file_and_corrupt_file() {
+         let d = tmp_dir("load");
+         let p = d.join("config.toml");
+-        assert_eq!(load_or_default(&p), (Config::default(), LoadOutcome::Missing));
++        assert_eq!(
++            load_or_default(&p),
++            (Config::default(), LoadOutcome::Missing)
++        );
+         std::fs::write(&p, "garbage [[[").unwrap();
+         let (c, o) = load_or_default(&p);
+         assert_eq!(c, Config::default());
+Diff in \\?\C:\dev\litewall\src\core\coverage.rs:28:
+ }
+
+ /// `true` when the covered fraction reaches `threshold` (default 0.9).
+-pub fn is_covered(monitor: RectI32, windows: &[RectI32], cols: u32, rows: u32, threshold: f32) -> bool {
++pub fn is_covered(
++    monitor: RectI32,
++    windows: &[RectI32],
++    cols: u32,
++    rows: u32,
++    threshold: f32,
++) -> bool {
+     covered_fraction(monitor, windows, cols, rows) >= threshold
+ }
+
+Diff in \\?\C:\dev\litewall\src\core\coverage.rs:55:
+     #[test]
+     fn full_window_is_one() {
+         assert_eq!(covered_fraction(MON, &[MON], 8, 6), 1.0);
+-        assert!(is_covered(MON, &[RectI32::new(-10, -10, 2000, 1100)], 8, 6, 0.9));
++        assert!(is_covered(
++            MON,
++            &[RectI32::new(-10, -10, 2000, 1100)],
++            8,
++            6,
++            0.9
++        ));
+     }
+
+     #[test]
+Diff in \\?\C:\dev\litewall\src\core\coverage.rs:101:
+
+     #[test]
+     fn degenerate_inputs() {
+-        assert_eq!(covered_fraction(RectI32::new(0, 0, 0, 0), &[MON], 8, 6), 0.0);
++        assert_eq!(
++            covered_fraction(RectI32::new(0, 0, 0, 0), &[MON], 8, 6),
++            0.0
++        );
+         assert_eq!(covered_fraction(MON, &[MON], 0, 6), 0.0);
+     }
+
+Diff in \\?\C:\dev\litewall\src\core\geometry.rs:10:
+
+ impl RectI32 {
+     pub const fn new(left: i32, top: i32, right: i32, bottom: i32) -> Self {
+-        Self { left, top, right, bottom }
++        Self {
++            left,
++            top,
++            right,
++            bottom,
++        }
+     }
+     pub fn width(&self) -> i64 {
+         self.right as i64 - self.left as i64
+Diff in \\?\C:\dev\litewall\src\core\geometry.rs:30:
+     }
+     /// Half-open containment: `left <= x < right`, `top <= y < bottom`.
+     pub fn contains_point(&self, x: i64, y: i64) -> bool {
+-        x >= self.left as i64 && x < self.right as i64 && y >= self.top as i64 && y < self.bottom as i64
++        x >= self.left as i64
++            && x < self.right as i64
++            && y >= self.top as i64
++            && y < self.bottom as i64
+     }
+     pub fn intersect(&self, o: &Self) -> Option<Self> {
+         let r = Self {
+Diff in \\?\C:\dev\litewall\src\core\geometry.rs:57:
+
+ /// Bounding rectangle of all non-empty rects (used by span mode, P1).
+ pub fn union_rect(rects: &[RectI32]) -> Option<RectI32> {
+-    rects.iter().filter(|r| !r.is_empty()).fold(None, |acc, r| match acc {
+-        None => Some(*r),
+-        Some(a) => Some(RectI32::new(
+-            a.left.min(r.left),
+-            a.top.min(r.top),
+-            a.right.max(r.right),
+-            a.bottom.max(r.bottom),
+-        )),
+-    })
++    rects
++        .iter()
++        .filter(|r| !r.is_empty())
++        .fold(None, |acc, r| match acc {
++            None => Some(*r),
++            Some(a) => Some(RectI32::new(
++                a.left.min(r.left),
++                a.top.min(r.top),
++                a.right.max(r.right),
++                a.bottom.max(r.bottom),
++            )),
++        })
+ }
+
+ /// Convert a virtual-desktop rect into the coordinate space of a parent window.
+Diff in \\?\C:\dev\litewall\src\core\geometry.rs:72:
+ /// `parent_origin` is the parent's client origin in virtual-desktop coordinates
+ /// (what `MapWindowPoints(NULL, parent, ..)` is derived from in `platform/`).
+ pub fn to_parent_relative(rect: RectI32, parent_origin: (i32, i32)) -> RectI32 {
+-    rect.translate(parent_origin.0.saturating_neg(), parent_origin.1.saturating_neg())
++    rect.translate(
++        parent_origin.0.saturating_neg(),
++        parent_origin.1.saturating_neg(),
++    )
+ }
+
+ #[cfg(test)]
+Diff in \\?\C:\dev\litewall\src\core\geometry.rs:90:
+     #[test]
+     fn intersect_cases() {
+         let a = RectI32::new(0, 0, 100, 100);
+-        assert_eq!(a.intersect(&RectI32::new(50, 50, 150, 150)), Some(RectI32::new(50, 50, 100, 100)));
++        assert_eq!(
++            a.intersect(&RectI32::new(50, 50, 150, 150)),
++            Some(RectI32::new(50, 50, 100, 100))
++        );
+         assert_eq!(a.intersect(&RectI32::new(100, 0, 200, 100)), None); // touching edge
+-        assert_eq!(a.intersect(&RectI32::new(-50, -50, 10, 10)), Some(RectI32::new(0, 0, 10, 10)));
++        assert_eq!(
++            a.intersect(&RectI32::new(-50, -50, 10, 10)),
++            Some(RectI32::new(0, 0, 10, 10))
++        );
+     }
+
+     #[test]
+Diff in \\?\C:\dev\litewall\src\core\geometry.rs:100:
+         let left = RectI32::new(-1920, 0, 0, 1080);
+         let main = RectI32::new(0, 0, 2560, 1600);
+         let above = RectI32::new(0, -1080, 1920, 0);
+-        assert_eq!(union_rect(&[left, main, above]), Some(RectI32::new(-1920, -1080, 2560, 1600)));
++        assert_eq!(
++            union_rect(&[left, main, above]),
++            Some(RectI32::new(-1920, -1080, 2560, 1600))
++        );
+         assert_eq!(union_rect(&[]), None);
+         assert_eq!(union_rect(&[RectI32::new(1, 1, 1, 1)]), None);
+     }
+Diff in \\?\C:\dev\litewall\src\core\geometry.rs:109:
+     fn parent_relative_negative_and_positive() {
+         let mon = RectI32::new(-1920, 0, 0, 1080);
+         // Parent (WorkerW) spans the whole virtual desktop starting at (-1920, 0).
+-        assert_eq!(to_parent_relative(mon, (-1920, 0)), RectI32::new(0, 0, 1920, 1080));
++        assert_eq!(
++            to_parent_relative(mon, (-1920, 0)),
++            RectI32::new(0, 0, 1920, 1080)
++        );
+         // Parent origin at (0,0): coordinates unchanged (and stay negative).
+         assert_eq!(to_parent_relative(mon, (0, 0)), mon);
+         // Parent above-left of everything.
+Diff in \\?\C:\dev\litewall\src\core\geometry.rs:116:
+         let m2 = RectI32::new(0, 0, 2560, 1600);
+-        assert_eq!(to_parent_relative(m2, (-1920, -1080)), RectI32::new(1920, 1080, 4480, 2680));
++        assert_eq!(
++            to_parent_relative(m2, (-1920, -1080)),
++            RectI32::new(1920, 1080, 4480, 2680)
++        );
+     }
+
+     #[test]
+Diff in \\?\C:\dev\litewall\src\core\monitor.rs:70:
+     use super::*;
+
+     fn m(id: &str, r: RectI32, dpi: u32) -> MonitorInfo {
+-        MonitorInfo { id: MonitorId::new(id), rect_px: r, dpi, refresh_hz: 60.0, primary: false }
++        MonitorInfo {
++            id: MonitorId::new(id),
++            rect_px: r,
++            dpi,
++            refresh_hz: 60.0,
++            primary: false,
++        }
+     }
+     const R1: RectI32 = RectI32::new(0, 0, 1920, 1080);
+     const R2: RectI32 = RectI32::new(-1920, 0, 0, 1080);
+Diff in \\?\C:\dev\litewall\src\core\monitor.rs:85:
+     fn added_removed() {
+         let old = vec![m("A", R1, 96)];
+         let new = vec![m("A", R1, 96), m("B", R2, 96)];
+-        assert_eq!(diff(&old, &new), MonitorDiff { added: vec![MonitorId::new("B")], ..Default::default() });
+         assert_eq!(
++            diff(&old, &new),
++            MonitorDiff {
++                added: vec![MonitorId::new("B")],
++                ..Default::default()
++            }
++        );
++        assert_eq!(
+             diff(&new, &old),
+-            MonitorDiff { removed: vec![MonitorId::new("B")], ..Default::default() }
++            MonitorDiff {
++                removed: vec![MonitorId::new("B")],
++                ..Default::default()
++            }
+         );
+     }
+
+Diff in \\?\C:\dev\litewall\src\core\pause.rs:71:
+ }
+
+ /// Reasons for which the video can be dropped while audio continues.
+-const VISUAL_ONLY: PauseReasons = PauseReasons(PauseReasons::COVERED.0 | PauseReasons::FULLSCREEN.0);
++const VISUAL_ONLY: PauseReasons =
++    PauseReasons(PauseReasons::COVERED.0 | PauseReasons::FULLSCREEN.0);
+
+ /// `Playing` iff no reasons. With `allow_audio_only`, a pause caused only by
+ /// covering/fullscreen becomes `AudioOnly` instead of `Paused`.
+Diff in \\?\C:\dev\litewall\src\core\pause.rs:103:
+
+ impl PauseTracker {
+     pub fn new(scope: PauseScope) -> Self {
+-        Self { scope, ..Self::default() }
++        Self {
++            scope,
++            ..Self::default()
++        }
+     }
+     pub fn set_scope(&mut self, scope: PauseScope) {
+         self.scope = scope;
+Diff in \\?\C:\dev\litewall\src\core\pause.rs:154:
+
+ impl Hysteresis {
+     pub fn new(pause_after: Duration, resume_after: Duration) -> Self {
+-        Self { pause_after, resume_after, stable: false, pending: None }
++        Self {
++            pause_after,
++            resume_after,
++            stable: false,
++            pending: None,
++        }
+     }
+     /// Spec defaults: 250 ms to pause, 100 ms to resume.
+     pub fn with_defaults() -> Self {
+Diff in \\?\C:\dev\litewall\src\core\pause.rs:220:
+
+     #[test]
+     fn user_pause_is_sticky() {
+-        let mut r = PauseReasons::USER.union(PauseReasons::COVERED).union(PauseReasons::SLEEP);
++        let mut r = PauseReasons::USER
++            .union(PauseReasons::COVERED)
++            .union(PauseReasons::SLEEP);
+         r.clear_auto();
+         assert_eq!(r, PauseReasons::USER);
+         assert_eq!(reduce(r, true), PlayState::Paused); // never AudioOnly
+Diff in \\?\C:\dev\litewall\src\core\pause.rs:229:
+     #[test]
+     fn audio_only_only_for_visual_reasons() {
+         assert_eq!(reduce(PauseReasons::COVERED, true), PlayState::AudioOnly);
+-        assert_eq!(reduce(PauseReasons::COVERED.union(PauseReasons::FULLSCREEN), true), PlayState::AudioOnly);
++        assert_eq!(
++            reduce(PauseReasons::COVERED.union(PauseReasons::FULLSCREEN), true),
++            PlayState::AudioOnly
++        );
+         assert_eq!(reduce(PauseReasons::COVERED, false), PlayState::Paused);
+-        assert_eq!(reduce(PauseReasons::COVERED.union(PauseReasons::LOCKED), true), PlayState::Paused);
++        assert_eq!(
++            reduce(PauseReasons::COVERED.union(PauseReasons::LOCKED), true),
++            PlayState::Paused
++        );
+     }
+
+     #[test]
+Diff in \\?\C:\dev\litewall\src\core\zoom.rs:66:
+         ZoomMode::Fit => (true, 0.0, false, 0.0, 0.0, 0.0, 0.0, 0.0),
+         ZoomMode::Stretch => (false, 0.0, false, 0.0, 0.0, 0.0, 0.0, 0.0),
+         ZoomMode::Original => (true, 0.0, true, 0.0, 0.0, 0.0, 0.0, 0.0),
+-        ZoomMode::Custom { zoom_log2, pan_x, pan_y, align_x, align_y } => (
++        ZoomMode::Custom {
++            zoom_log2,
++            pan_x,
++            pan_y,
++            align_x,
++            align_y,
++        } => (
+             true,
+             1.0,
+             false,
+Diff in \\?\C:\dev\litewall\src\core\zoom.rs:105:
+             ZoomMode::Fit,
+             ZoomMode::Stretch,
+             ZoomMode::Original,
+-            ZoomMode::Custom { zoom_log2: 0.5, pan_x: 0.1, pan_y: -0.1, align_x: 1.0, align_y: -1.0 },
++            ZoomMode::Custom {
++                zoom_log2: 0.5,
++                pan_x: 0.1,
++                pan_y: -0.1,
++                align_x: 1.0,
++                align_y: -1.0,
++            },
+         ];
+         for m in modes {
+             let names: Vec<_> = properties(&m).iter().map(|(n, _)| *n).collect();
+Diff in \\?\C:\dev\litewall\src\core\zoom.rs:136:
+         });
+         assert_eq!(get(&custom, "video-zoom"), "1.5");
+         let fit = properties(&ZoomMode::Fit);
+-        for k in ["video-zoom", "video-pan-x", "video-pan-y", "video-align-x", "video-align-y"] {
++        for k in [
++            "video-zoom",
++            "video-pan-x",
++            "video-pan-y",
++            "video-align-x",
++            "video-align-y",
++        ] {
+             assert_eq!(get(&fit, k), "0", "{k} not reset");
+         }
+         assert_eq!(get(&fit, "video-unscaled"), "no");
+Diff in \\?\C:\dev\litewall\src\logger.rs:39:
+             fs::create_dir_all(dir)?;
+         }
+         let (file, size) = open_append(&path)?;
+-        Ok(Self { path, file: Some(file), size, max_bytes, keep })
++        Ok(Self {
++            path,
++            file: Some(file),
++            size,
++            max_bytes,
++            keep,
++        })
+     }
+
+     /// Close, shift `.i` -> `.i+1`, move the live file to `.1`, reopen empty.
+Diff in \\?\C:\dev\litewall\src\logger.rs:93:
+     let d = doy - (153 * mp + 2) / 5 + 1;
+     let m = if mp < 10 { mp + 3 } else { mp - 9 };
+     let y = yoe + era * 400 + if m <= 2 { 1 } else { 0 };
+-    format!("{y:04}-{m:02}-{d:02} {:02}:{:02}:{:02}", rem / 3600, rem % 3600 / 60, rem % 60)
++    format!(
++        "{y:04}-{m:02}-{d:02} {:02}:{:02}:{:02}",
++        rem / 3600,
++        rem % 3600 / 60,
++        rem % 60
++    )
+ }
+
+ fn now_string() -> String {
+Diff in \\?\C:\dev\litewall\src\logger.rs:100:
+-    let d = SystemTime::now().duration_since(UNIX_EPOCH).unwrap_or_default();
++    let d = SystemTime::now()
++        .duration_since(UNIX_EPOCH)
++        .unwrap_or_default();
+     format!("{}.{:03}", utc_string(d.as_secs()), d.subsec_millis())
+ }
+
+Diff in \\?\C:\dev\litewall\src\logger.rs:130:
+ /// Fails if the file cannot be opened or a logger is already installed.
+ pub fn init(dir: &Path, level: LevelFilter) -> io::Result<()> {
+     let sink = FileSink::new(dir.join(FILE_NAME), MAX_BYTES, KEEP)?;
+-    log::set_boxed_logger(Box::new(Logger { sink: Mutex::new(sink), level }))
+-        .map_err(|e| io::Error::new(io::ErrorKind::AlreadyExists, e.to_string()))?;
++    log::set_boxed_logger(Box::new(Logger {
++        sink: Mutex::new(sink),
++        level,
++    }))
++    .map_err(|e| io::Error::new(io::ErrorKind::AlreadyExists, e.to_string()))?;
+     log::set_max_level(level);
+     Ok(())
+ }
+Diff in \\?\C:\dev\litewall\src\logger.rs:183:
+         let _ = fs::remove_dir_all(d);
+     }
+ }
++
+Diff in \\?\C:\dev\litewall\src\platform\mod.rs:9:
+ pub const WM_APP_REFRESH: u32 = sys::WM_APP + 2;
+ /// Reserved for M3: libmpv wakeup callback -> main thread.
+ pub const WM_APP_MPV_EVENT: u32 = sys::WM_APP + 3;
++
+Diff in \\?\C:\dev\litewall\src\platform\sys.rs:75:
+ #[link(name = "kernel32")]
+ extern "system" {
+     pub fn GetModuleHandleW(name: *const u16) -> isize;
+-    pub fn CreateMutexW(attrs: *const core::ffi::c_void, initial_owner: i32, name: *const u16) -> HANDLE;
++    pub fn CreateMutexW(
++        attrs: *const core::ffi::c_void,
++        initial_owner: i32,
++        name: *const u16,
++    ) -> HANDLE;
+     pub fn GetLastError() -> u32;
+     pub fn CloseHandle(h: HANDLE) -> i32;
+ }
+
+
+Id      : 19840
+CPU     : 0
+WS      : 5558272
+PM      : 1134592
+Threads : {19848, 19792, 19516, 19784}
+
+Id      : 20452
+CPU     : 0
+WS      : 3903488
+PM      : 806912
+Threads : {20448, 19472, 20476, 2824}
+
+Id  : 19840
+CPU : 0
+
+2026-11-10 03:05:32.199 DEBUG message window 0x4F0BCE
+2026-11-10 03:05:43.305 INFO  second launch: forwarded msg=0x8001 delivered=true
+2026-11-10 03:05:43.305 INFO  quit requested
+2026-11-10 03:05:43.305 INFO  exiting with code 0
+2026-11-10 03:06:45.433 INFO  LiteWall 0.1.0 starting
+2026-11-10 03:06:45.436 DEBUG message window 0x540914
+2026-11-10 03:06:45.485 INFO  second launch: forwarded msg=0x8002 delivered=true2026-11-10 03:06:45.485 INFO  refresh requested (second launch)
+
+2026-11-10 03:06:55.493 INFO  second launch: forwarded msg=0x8001 delivered=true
+2026-11-10 03:06:55.493 INFO  quit requested
+2026-11-10 03:06:55.493 INFO  exiting with code 0
+
+
+PS C:\dev\litewall>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

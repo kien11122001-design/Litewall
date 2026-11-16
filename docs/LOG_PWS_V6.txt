@@ -1,0 +1,45 @@
+The zoom loop never ran: PowerShell rejected it before executing anything, and an idle LiteWall instance is still running in the background.
+
+Why the loop failed
+My typo: in a double-quoted string, "mode $m: …" makes PowerShell read $m: as a drive-style variable (like $env:), so it refused to parse the loop. It needs ${m}.
+Idle instance: your log shows a start at 11:17:25 with no Progman or playback lines, meaning it launched without --play and is just sitting there. At 11:17:56 comes second launch: forwarded msg=0x8002. LiteWall is single-instance, so any new --play launch only hands a “refresh” message to that idle instance and exits. Nothing would play until it’s quit.
+
+Your earlier runs this morning (07:01–07:16) did reach playback in all five modes: zoom=Fill, Fit, Stretch, Original and Custom { zoom_log2: 0.3, pan_x: 0.1, … }. The log can show that the modes were applied, but not how they look, which is still what I need from you.
+
+Corrected check
+powershell
+& $exe --quit; Start-Sleep 2
+Get-Process litewall -ErrorAction SilentlyContinue   # expect: no output
+
+foreach ($m in 'fill','fit','stretch','original','custom:0.3,0.1,0') {
+  Start-Process $exe -ArgumentList '--play',"`"$PWD\clip.mp4`"",'--mode',$m
+  Read-Host "mode ${m}: look at the desktop, then press Enter"
+  & $exe --quit; Start-Sleep 2
+}
+
+If Get-Process prints a line, run & $exe --quit again before the loop.
+
+When each mode appears, tell me one line per mode. Fill should cover the whole screen with the edges cropped, Fit should show black bars, Stretch should look distorted, Original should be small at 1:1, and Custom should be zoomed in and shifted. Also say if any stray mpv window ever appears. Then try --play with a small GIF or WebP file.
+
+Once that’s confirmed I can tick the remaining M3 items. I’ll still need your --list-monitors log (Get-Content $log -Tail 8 after the command from before) before I build the multi-monitor runtime.
+
+
+
+PS C:\dev\litewall> & $exe --quit; Start-Sleep 2
+>> Get-Process litewall -ErrorAction SilentlyContinue   # expect: no output
+>>
+>> foreach ($m in 'fill','fit','stretch','original','custom:0.3,0.1,0') {
+>>   Start-Process $exe -ArgumentList '--play',"`"$PWD\clip.mp4`"",'--mode',$m
+>>   Read-Host "mode ${m}: look at the desktop, then press Enter"
+>>   & $exe --quit; Start-Sleep 2
+>> }
+
+mode fill: look at the desktop, then press Enter:
+
+mode fit: look at the desktop, then press Enter:
+
+mode stretch: look at the desktop, then press Enter:
+
+mode original: look at the desktop, then press Enter:
+
+mode custom:0.3,0.1,0: look at the desktop, then press Enter:

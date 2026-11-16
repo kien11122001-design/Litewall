@@ -1,0 +1,12 @@
+[package]
+name = "litewall-spike"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+# Standalone throwaway crate (M0). Not part of the main crate.
+[workspace]
+
+[dependencies]
+# Load libmpv-2.dll at runtime (avoids MSVC import-lib friction; PRD §2.2).
+libloading = "0.8"

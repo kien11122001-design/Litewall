@@ -1,0 +1,442 @@
+===== litewall spike start =====
+monitor[0] rect=(0,0)-(2560,1600) primary=true
+monitor[1] rect=(-1080,-314)-(0,1606) primary=false
+monitor[2] rect=(-3000,854)-(-1080,1934) primary=false
+--- applying mpv options (PRD §7 profile) ---
+mpv_initialize rc=0 (success)
+loadfile rc=0 (success)
+[after loadfile] private=17 MB working_set=19 MB (whole process incl. mpv)
+running; Ctrl+C or --seconds to stop. CHECK: video behind icons? icons clickable? not in taskbar/Alt-Tab?
+===== litewall spike start =====
+monitor[0] rect=(0,0)-(2560,1600) primary=true
+monitor[1] rect=(-1080,-314)-(0,1606) primary=false
+monitor[2] rect=(-3000,854)-(-1080,1934) primary=false
+--- applying mpv options (PRD §7 profile) ---
+mpv_initialize rc=0 (success)
+loadfile rc=0 (success)
+[after loadfile] private=42 MB working_set=48 MB (whole process incl. mpv)
+running; Ctrl+C or --seconds to stop. CHECK: video behind icons? icons clickable? not in taskbar/Alt-Tab?
+===== litewall spike start =====
+--- window tree: before ---
+hwnd=0x90684 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x209F8 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x5086E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10914 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3207DA class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10808 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x60682 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x7008C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x206C2 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x305F8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x105B0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20568 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10302 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102E8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102D0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1028C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20170 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x201DC class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1021E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1017E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10176 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x8000080
+hwnd=0x10174 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1010C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3004C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10166 class=Progman visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+    hwnd=0x10168 class=SHELLDLL_DefView visible=true rect=(-3000,-314)-(2560,1934) style=0x56010000 ex=0x0
+    hwnd=0x1016A class=SysListView32 visible=false rect=(-3000,-314)-(2560,1934) style=0x46003A40 ex=0x0
+    hwnd=0x1016E class=SysHeader32 visible=false rect=(-3000,-314)-(-3000,-314) style=0x400108C2 ex=0x0
+--- end tree ---
+Progman = 0x10166
+0x052C(wParam=0xD, lParam=1) -> ret=1 res=0
+--- window tree: after 0x052C ---
+hwnd=0x90684 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x209F8 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x5086E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10914 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3207DA class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10808 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x60682 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x7008C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x206C2 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x305F8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x105B0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20568 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10302 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102E8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102D0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1028C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20170 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x201DC class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1021E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1017E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10176 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x8000080
+hwnd=0x10174 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1010C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3004C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x409C0 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+    hwnd=0x10168 class=SHELLDLL_DefView visible=true rect=(-3000,-314)-(2560,1934) style=0x56010000 ex=0x0
+    hwnd=0x1016A class=SysListView32 visible=false rect=(-3000,-314)-(2560,1934) style=0x46003A40 ex=0x0
+    hwnd=0x1016E class=SysHeader32 visible=false rect=(-3000,-314)-(-3000,-314) style=0x400108C2 ex=0x0
+hwnd=0x1A09E8 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x9E000000 ex=0x80000A0
+hwnd=0x10166 class=Progman visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+--- end tree ---
+workerw(behind icons)=0x1A09E8 defview_in_progman=false
+===== litewall spike start =====
+monitor[0] rect=(0,0)-(2560,1600) primary=true
+monitor[1] rect=(-1080,-314)-(0,1606) primary=false
+monitor[2] rect=(-3000,854)-(-1080,1934) primary=false
+Progman = 0x10166
+0x052C(wParam=0xD, lParam=1) -> ret=1 res=0
+--- window tree: after 0x052C ---
+hwnd=0x90684 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x209F8 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x5086E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10914 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3207DA class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10808 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x60682 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x7008C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x206C2 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x305F8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x105B0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20568 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10302 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102E8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102D0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1028C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20170 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x201DC class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1021E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1017E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10176 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x8000080
+hwnd=0x10174 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1010C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3004C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x409C0 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+    hwnd=0x10168 class=SHELLDLL_DefView visible=true rect=(-3000,-314)-(2560,1934) style=0x56010000 ex=0x0
+    hwnd=0x1016A class=SysListView32 visible=false rect=(-3000,-314)-(2560,1934) style=0x46003A40 ex=0x0
+    hwnd=0x1016E class=SysHeader32 visible=false rect=(-3000,-314)-(-3000,-314) style=0x400108C2 ex=0x0
+hwnd=0x1A09E8 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x9E000000 ex=0x80000A0
+hwnd=0x10166 class=Progman visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+--- end tree ---
+workerw(behind icons)=0x1A09E8 defview_in_progman=false
+layout=Classic host=0x1A09E8
+SetParent -> previous parent 0x10010 (0 may mean failure)
+parent origin=(-3000,-314) child=(3000,314) size=2560x1600
+SetWindowPos ok=true hwnd=0x30A08
+wallpaper: hwnd=0x30A08 class=LiteWallSpike visible=true rect=(0,0)-(2560,1600) style=0x56000000 ex=0x8000080
+--- applying mpv options (PRD §7 profile) ---
+mpv_initialize rc=0 (success)
+loadfile rc=0 (success)
+[after loadfile] private=16 MB working_set=16 MB (whole process incl. mpv)
+running; Ctrl+C or --seconds to stop. CHECK: video behind icons? icons clickable? not in taskbar/Alt-Tab?
+===== litewall spike start =====
+monitor[0] rect=(0,0)-(2560,1600) primary=true
+monitor[1] rect=(-1080,-314)-(0,1606) primary=false
+monitor[2] rect=(-3000,854)-(-1080,1934) primary=false
+--- applying mpv options (PRD §7 profile) ---
+mpv_initialize rc=0 (success)
+video file OK: \\?\C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (5238714 bytes)
+loadfile rc=0 (success)
+[after loadfile] private=17 MB working_set=19 MB (whole process incl. mpv)
+timers: status3=26469 status30=26468 rewid=18446744073709551615 exit=26467
+running; Ctrl+C or --seconds to stop. CHECK: video behind icons? icons clickable? not in taskbar/Alt-Tab?
+[status] hwdec-current=d3d11va vo=gpu-next size=1920x1080 fps=60.000000 dropped=0
+[status] path=C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 file-format=mov,mp4,m4a,3gp,3g2,mj2 video-format=h264 idle-active=no core-idle=no
+[status] private=323 MB working_set=130 MB (whole process incl. mpv)
+exiting; destroying mpv
+===== litewall spike start =====
+monitor[0] rect=(0,0)-(2560,1600) primary=true
+monitor[1] rect=(-1080,-314)-(0,1606) primary=false
+monitor[2] rect=(-3000,854)-(-1080,1934) primary=false
+Progman = 0x10166
+0x052C(wParam=0xD, lParam=1) -> ret=1 res=0
+--- window tree: after 0x052C ---
+hwnd=0x90684 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x20A76 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x1A08CE class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x209F8 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x5086E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10914 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3207DA class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10808 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x60682 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x7008C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x206C2 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x305F8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x105B0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20568 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10302 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102E8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102D0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1028C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20170 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x201DC class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1021E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1017E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10176 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x8000080
+hwnd=0x10174 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1010C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3004C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x409C0 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+    hwnd=0x10168 class=SHELLDLL_DefView visible=true rect=(-3000,-314)-(2560,1934) style=0x56010000 ex=0x0
+    hwnd=0x1016A class=SysListView32 visible=false rect=(-3000,-314)-(2560,1934) style=0x46003A40 ex=0x0
+    hwnd=0x1016E class=SysHeader32 visible=false rect=(-3000,-314)-(-3000,-314) style=0x400108C2 ex=0x0
+hwnd=0x1A09E8 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x9E000000 ex=0x80000A0
+hwnd=0x10166 class=Progman visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+--- end tree ---
+workerw(behind icons)=0x1A09E8 defview_in_progman=false
+layout=Classic host=0x1A09E8
+SetParent -> previous parent 0x10010 (0 may mean failure)
+parent origin=(-3000,-314) child=(3000,314) size=2560x1600
+SetWindowPos ok=true hwnd=0xA0A70
+wallpaper: hwnd=0xA0A70 class=LiteWallSpike visible=true rect=(0,0)-(2560,1600) style=0x56000000 ex=0x8000080
+--- applying mpv options (PRD §7 profile) ---
+mpv_initialize rc=0 (success)
+video file OK: \\?\C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (5238714 bytes)
+loadfile rc=0 (success)
+[after loadfile] private=17 MB working_set=16 MB (whole process incl. mpv)
+timers: status3=26297 status30=26296 rewid=18446744073709551615 exit=26295
+running; Ctrl+C or --seconds to stop. CHECK: video behind icons? icons clickable? not in taskbar/Alt-Tab?
+[status] hwdec-current=d3d11va vo=gpu-next size=1920x1080 fps=60.000000 dropped=0
+[status] path=C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 file-format=mov,mp4,m4a,3gp,3g2,mj2 video-format=h264 idle-active=no core-idle=no
+[status] private=344 MB working_set=110 MB (whole process incl. mpv)
+[status] hwdec-current=d3d11va vo=gpu-next size=1920x1080 fps=60.000000 dropped=0
+[status] path=C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 file-format=mov,mp4,m4a,3gp,3g2,mj2 video-format=h264 idle-active=no core-idle=no
+[status] private=334 MB working_set=111 MB (whole process incl. mpv)
+===== litewall spike start =====
+monitor[0] rect=(0,0)-(2560,1600) primary=true
+monitor[1] rect=(-1080,-314)-(0,1606) primary=false
+monitor[2] rect=(-3000,854)-(-1080,1934) primary=false
+Progman = 0x10166
+0x052C(wParam=0xD, lParam=1) -> ret=1 res=0
+--- window tree: after 0x052C ---
+hwnd=0x10808 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x90684 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x20A76 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x209F8 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x1A08CE class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x5086E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10914 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3207DA class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x60682 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x7008C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x206C2 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x305F8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x105B0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20568 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10302 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102E8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102D0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1028C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20170 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x201DC class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1021E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1017E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10176 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x8000080
+hwnd=0x10174 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1010C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3004C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x409C0 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+    hwnd=0x10168 class=SHELLDLL_DefView visible=true rect=(-3000,-314)-(2560,1934) style=0x56010000 ex=0x0
+    hwnd=0x1016A class=SysListView32 visible=false rect=(-3000,-314)-(2560,1934) style=0x46003A40 ex=0x0
+    hwnd=0x1016E class=SysHeader32 visible=false rect=(-3000,-314)-(-3000,-314) style=0x400108C2 ex=0x0
+hwnd=0x1A09E8 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x9E000000 ex=0x80000A0
+hwnd=0x10166 class=Progman visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+--- end tree ---
+workerw(behind icons)=0x1A09E8 defview_in_progman=false
+layout=Classic host=0x1A09E8
+SetParent -> previous parent 0x10010 (0 may mean failure)
+parent origin=(-3000,-314) child=(3000,314) size=2560x1600
+SetWindowPos ok=true hwnd=0xC0A70
+wallpaper: hwnd=0xC0A70 class=LiteWallSpike visible=true rect=(0,0)-(2560,1600) style=0x56000000 ex=0x8000080
+--- applying mpv options (PRD §7 profile) ---
+mpv_initialize rc=0 (success)
+video file OK: \\?\C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (5238714 bytes)
+loadfile rc=0 (success)
+[after loadfile] private=17 MB working_set=16 MB (whole process incl. mpv)
+timers: status3=26198 status30=26197 rewid=26196 exit=26195
+running; Ctrl+C or --seconds to stop. CHECK: video behind icons? icons clickable? not in taskbar/Alt-Tab?
+[status] hwdec-current=d3d11va vo=gpu-next size=1920x1080 fps=60.000000 dropped=0
+[status] path=C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 file-format=mov,mp4,m4a,3gp,3g2,mj2 video-format=h264 idle-active=no core-idle=no
+[status] private=342 MB working_set=109 MB (whole process incl. mpv)
+SetParent -> previous parent 0x10010 (0 may mean failure)
+parent origin=(-3000,-314) child=(3000,314) size=2560x1600
+SetWindowPos ok=true hwnd=0x1A0270
+wallpaper: hwnd=0x1A0270 class=LiteWallSpike visible=true rect=(0,0)-(2560,1600) style=0x56000000 ex=0x8000080
+runtime wid change -> rc=0 (success) new=0x1A0270
+exiting; destroying mpv
+===== litewall spike start =====
+monitor[0] rect=(0,0)-(2560,1600) primary=true
+monitor[1] rect=(-1080,-314)-(0,1606) primary=false
+monitor[2] rect=(-3000,854)-(-1080,1934) primary=false
+Progman = 0x10166
+0x052C(wParam=0xD, lParam=1) -> ret=1 res=0
+--- window tree: after 0x052C ---
+hwnd=0x10808 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x90684 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x20A76 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x209F8 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x1A08CE class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x5086E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10914 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3207DA class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x60682 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x7008C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x206C2 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x305F8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x105B0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20568 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10302 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102E8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102D0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1028C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20170 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x201DC class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1021E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1017E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10176 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x8000080
+hwnd=0x10174 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1010C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3004C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x409C0 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+    hwnd=0x10168 class=SHELLDLL_DefView visible=true rect=(-3000,-314)-(2560,1934) style=0x56010000 ex=0x0
+    hwnd=0x1016A class=SysListView32 visible=false rect=(-3000,-314)-(2560,1934) style=0x46003A40 ex=0x0
+    hwnd=0x1016E class=SysHeader32 visible=false rect=(-3000,-314)-(-3000,-314) style=0x400108C2 ex=0x0
+hwnd=0x1A09E8 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x9E000000 ex=0x80000A0
+hwnd=0x10166 class=Progman visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+--- end tree ---
+workerw(behind icons)=0x1A09E8 defview_in_progman=false
+layout=Classic host=0x1A09E8
+SetParent -> previous parent 0x10010 (0 may mean failure)
+parent origin=(-3000,-314) child=(1920,0) size=1080x1920
+SetWindowPos ok=true hwnd=0x7608E8
+wallpaper: hwnd=0x7608E8 class=LiteWallSpike visible=true rect=(-1080,-314)-(0,1606) style=0x56000000 ex=0x8000080
+--- applying mpv options (PRD §7 profile) ---
+mpv_initialize rc=0 (success)
+video file OK: \\?\C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (5238714 bytes)
+loadfile rc=0 (success)
+[after loadfile] private=17 MB working_set=17 MB (whole process incl. mpv)
+timers: status3=26181 status30=26180 rewid=18446744073709551615 exit=26179
+running; Ctrl+C or --seconds to stop. CHECK: video behind icons? icons clickable? not in taskbar/Alt-Tab?
+[status] hwdec-current=d3d11va vo=gpu-next size=1920x1080 fps=60.000000 dropped=0
+[status] path=C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 file-format=mov,mp4,m4a,3gp,3g2,mj2 video-format=h264 idle-active=no core-idle=no
+[status] private=313 MB working_set=111 MB (whole process incl. mpv)
+===== litewall spike start =====
+monitor[0] rect=(0,0)-(2560,1600) primary=true
+monitor[1] rect=(-1080,-314)-(0,1606) primary=false
+monitor[2] rect=(-3000,854)-(-1080,1934) primary=false
+Progman = 0x10166
+0x052C(wParam=0xD, lParam=1) -> ret=1 res=0
+--- window tree: after 0x052C ---
+hwnd=0x10808 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x90684 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x20A76 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x209F8 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x1A08CE class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x5086E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10914 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3207DA class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x60682 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x7008C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x206C2 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x305F8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x105B0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20568 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10302 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102E8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102D0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1028C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20170 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x201DC class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1021E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1017E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10176 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x8000080
+hwnd=0x10174 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1010C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3004C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x409C0 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+    hwnd=0x10168 class=SHELLDLL_DefView visible=true rect=(-3000,-314)-(2560,1934) style=0x56010000 ex=0x0
+    hwnd=0x1016A class=SysListView32 visible=false rect=(-3000,-314)-(2560,1934) style=0x46003A40 ex=0x0
+    hwnd=0x1016E class=SysHeader32 visible=false rect=(-3000,-314)-(-3000,-314) style=0x400108C2 ex=0x0
+hwnd=0x1A09E8 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x9E000000 ex=0x80000A0
+hwnd=0x10166 class=Progman visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+--- end tree ---
+workerw(behind icons)=0x1A09E8 defview_in_progman=false
+layout=Classic host=0x1A09E8
+SetParent -> previous parent 0x10010 (0 may mean failure)
+parent origin=(-3000,-314) child=(3000,314) size=2560x1600
+SetWindowPos ok=true hwnd=0x1907AC
+wallpaper: hwnd=0x1907AC class=LiteWallSpike visible=true rect=(0,0)-(2560,1600) style=0x56000000 ex=0x8000080
+--- applying mpv options (PRD §7 profile) ---
+mpv_initialize rc=0 (success)
+video file OK: \\?\C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (5238714 bytes)
+loadfile rc=0 (success)
+[after loadfile] private=17 MB working_set=17 MB (whole process incl. mpv)
+timers: status3=26157 status30=26156 rewid=18446744073709551615 exit=26155
+running; Ctrl+C or --seconds to stop. CHECK: video behind icons? icons clickable? not in taskbar/Alt-Tab?
+[status] hwdec-current=d3d11va vo=gpu-next size=1920x1080 fps=60.000000 dropped=0
+[status] path=C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 file-format=mov,mp4,m4a,3gp,3g2,mj2 video-format=h264 idle-active=no core-idle=no
+[status] private=345 MB working_set=111 MB (whole process incl. mpv)
+[status] hwdec-current=d3d11va vo=gpu-next size=1920x1080 fps=60.000000 dropped=0
+[status] path=C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 file-format=mov,mp4,m4a,3gp,3g2,mj2 video-format=h264 idle-active=no core-idle=no
+[status] private=334 MB working_set=111 MB (whole process incl. mpv)
+===== litewall spike start =====
+monitor[0] rect=(0,0)-(2560,1600) primary=true
+monitor[1] rect=(-1080,-314)-(0,1606) primary=false
+monitor[2] rect=(-3000,854)-(-1080,1934) primary=false
+Progman = 0x10166
+0x052C(wParam=0xD, lParam=1) -> ret=1 res=0
+--- window tree: after 0x052C ---
+hwnd=0x20A76 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x90684 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x209F8 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x80
+hwnd=0x1A08CE class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x5086E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10914 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3207DA class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x60682 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x7008C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x206C2 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x305F8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x105B0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20568 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10302 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102E8 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x102D0 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1028C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x20170 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x201DC class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1021E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1017E class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x10176 class=WorkerW visible=false rect=(0,0)-(0,0) style=0x84000000 ex=0x8000080
+hwnd=0x10174 class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x1010C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x3004C class=WorkerW visible=false rect=(0,0)-(198,56) style=0x4C00000 ex=0x100
+hwnd=0x409C0 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+    hwnd=0x10168 class=SHELLDLL_DefView visible=true rect=(-3000,-314)-(2560,1934) style=0x56010000 ex=0x0
+    hwnd=0x1016A class=SysListView32 visible=false rect=(-3000,-314)-(2560,1934) style=0x46003A40 ex=0x0
+    hwnd=0x1016E class=SysHeader32 visible=false rect=(-3000,-314)-(-3000,-314) style=0x400108C2 ex=0x0
+hwnd=0x1A09E8 class=WorkerW visible=true rect=(-3000,-314)-(2560,1934) style=0x9E000000 ex=0x80000A0
+hwnd=0x10166 class=Progman visible=true rect=(-3000,-314)-(2560,1934) style=0x96000000 ex=0x80
+--- end tree ---
+workerw(behind icons)=0x1A09E8 defview_in_progman=false
+layout=Classic host=0x1A09E8
+SetParent -> previous parent 0x10010 (0 may mean failure)
+parent origin=(-3000,-314) child=(3000,314) size=2560x1600
+SetWindowPos ok=true hwnd=0xD0850
+wallpaper: hwnd=0xD0850 class=LiteWallSpike visible=true rect=(0,0)-(2560,1600) style=0x56000000 ex=0x8000080
+--- applying mpv options (PRD §7 profile) ---
+mpv_initialize rc=0 (success)
+video file OK: \\?\C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (5238714 bytes)
+loadfile rc=0 (success)
+[after loadfile] private=17 MB working_set=17 MB (whole process incl. mpv)
+timers: status3=25312 status30=25311 rewid=18446744073709551615 exit=25310
+running; Ctrl+C or --seconds to stop. CHECK: video behind icons? icons clickable? not in taskbar/Alt-Tab?
+[status] hwdec-current=d3d11va vo=gpu-next size=1920x1080 fps=60.000000 dropped=0
+[status] path=C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 file-format=mov,mp4,m4a,3gp,3g2,mj2 video-format=h264 idle-active=no core-idle=no
+[status] private=344 MB working_set=110 MB (whole process incl. mpv)
+[status] hwdec-current=d3d11va vo=gpu-next size=1920x1080 fps=60.000000 dropped=0
+[status] path=C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 file-format=mov,mp4,m4a,3gp,3g2,mj2 video-format=h264 idle-active=no core-idle=no
+[status] private=334 MB working_set=111 MB (whole process incl. mpv)

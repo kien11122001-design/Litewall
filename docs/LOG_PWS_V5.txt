@@ -1,0 +1,70 @@
+PS C:\dev\litewall>  .\target\release\litewall.exe --play "$PWD\nope.mp4" custom:0.3,0.1,0
+PS C:\dev\litewall> $log = "$env:LOCALAPPDATA\LiteWall\logs\litewall.log"
+>> .\target\release\litewall.exe --play "$PWD\nope.mp4"
+>> Start-Sleep 1; Get-Content $log -Tail 3
+>>
+>> "not a video" | Set-Content "$PWD\bad.mp4"
+>> .\target\release\litewall.exe --play "$PWD\bad.mp4"
+>> Start-Sleep 3; Get-Content $log -Tail 6
+>> .\target\release\litewall.exe --quit
+>> Remove-Item "$PWD\bad.mp4"
+2026-11-10 07:17:32.254 INFO  refresh requested (second launch)
+2026-11-10 07:20:38.569 INFO  second launch: forwarded msg=0x8002 delivered=true
+2026-11-10 07:20:38.569 INFO  refresh requested (second launch)
+2026-11-10 07:17:32.254 INFO  second launch: forwarded msg=0x8002 delivered=true
+2026-11-10 07:17:32.254 INFO  refresh requested (second launch)
+2026-11-10 07:20:38.569 INFO  second launch: forwarded msg=0x8002 delivered=true
+2026-11-10 07:20:38.569 INFO  refresh requested (second launch)
+2026-11-10 07:20:39.580 INFO  second launch: forwarded msg=0x8002 delivered=true
+2026-11-10 07:20:39.580 INFO  refresh requested (second launch)
+PS C:\dev\litewall> $log = "$env:LOCALAPPDATA\LiteWall\logs\litewall.log"
+>> $exe = ".\target\release\litewall.exe"
+>>
+>> # make sure nothing is running
+>> & $exe --quit; Start-Sleep 2
+>> Get-Process litewall -ErrorAction SilentlyContinue   # expect: no output
+PS C:\dev\litewall> & $exe --play "$PWD\nope.mp4"; Start-Sleep 2
+>> Get-Content $log -Tail 4
+>> Get-Process litewall -ErrorAction SilentlyContinue
+2026-11-10 07:23:16.876 INFO  mpv player created (client API 2.6, wid=0x2105FE)
+2026-11-10 07:23:16.879 DEBUG refresh_wallpaper -> 1
+2026-11-10 07:23:16.879 DEBUG wallpaper window 0x2105FE destroyed
+2026-11-10 07:23:16.939 ERROR --play failed: file not found: C:\dev\litewall\nope.mp4
+PS C:\dev\litewall> & $exe --play "$PWD\nope.mp4"; Start-Sleep 2
+>> Get-Content $log -Tail 4
+>> Get-Process litewall -ErrorAction SilentlyContinue
+2026-11-10 07:24:15.381 INFO  mpv player created (client API 2.6, wid=0x210802)
+2026-11-10 07:24:15.384 DEBUG refresh_wallpaper -> 1
+2026-11-10 07:24:15.384 DEBUG wallpaper window 0x210802 destroyed
+2026-11-10 07:24:15.441 ERROR --play failed: file not found: C:\dev\litewall\nope.mp4
+PS C:\dev\litewall> "not a video" | Set-Content "$PWD\bad.mp4"
+>> & $exe --play "$PWD\bad.mp4"; Start-Sleep 3
+>> Get-Content $log -Tail 8
+>> & $exe --quit; Start-Sleep 2
+>> Remove-Item "$PWD\bad.mp4"
+2026-11-10 07:25:19.368 INFO  wallpaper window 0x23077E placed on RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+2026-11-10 07:25:19.368 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 } file=C:\dev\litewall\bad.mp4 zoom=Fill
+2026-11-10 07:25:19.369 INFO  mpv player created (client API 2.6, wid=0x23077E)
+2026-11-10 07:25:19.370 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:25:19.371 DEBUG mpv: start-file
+2026-11-10 07:25:19.373 ERROR playback failed (mpv error -17)
+2026-11-10 07:25:19.373 ERROR mpv: Failed to recognize file format.
+2026-11-10 07:25:19.373 ERROR hiding wallpaper window: mpv error -17
+PS C:\dev\litewall>
+
+
+
+
+Deciding whether to implement the pre-check fix now
+Thought for 3s
+
+Checking the wallpaper window’s file-check order.
+
+Deciding whether to implement the pre-check fix now.
+
+Both failure cases pass:
+
+Missing file: logs file not found and exits with no process left behind (F-08 ✔).
+Fake video: Failed to recognize file format → playback failed → hiding wallpaper window, and the process stays alive until --quit (✔).
+The missing-file log shows one flaw. The wallpaper window and an mpv player were created and then torn down (refresh_wallpaper -> 1) before the file check ran. That could cause a brief flicker. I’ll move the file check ahead of window creation and add the --opt flag in the same pass.
+

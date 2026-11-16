@@ -1,0 +1,13 @@
+Step       Handles PrivateMB Threads LastRunningLine
+----       ------- --------- ------- ---------------
+start         2941      1426     107 3 wallpaper window(s) running
+1 internal    2941      1437     107 3 wallpaper window(s) running
+1 extend      2941      1438     107 3 wallpaper window(s) running
+2 internal    2941      1437     107 3 wallpaper window(s) running
+2 extend      2942      1426     107 3 wallpaper window(s) running
+3 internal    2942      1438     107 3 wallpaper window(s) running
+3 extend      2942      1439     107 3 wallpaper window(s) running
+
+
+Saved .\docs\hotplug-results.csv
+PS C:\dev\litewall>

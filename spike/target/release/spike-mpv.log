@@ -1,0 +1,1527 @@
+[   0.002][v][cplayer] mpv v0.42.0-19-ga61f6c3ab Copyright © 2000-2026 mpv/MPlayer/mplayer2 projects
+[   0.002][v][cplayer]  built on Nov  9 2026 15:10:45
+[   0.002][v][cplayer] libplacebo version: v7.387.0 (v7.387.0-13-g9fabf6d-dirty)
+[   0.002][v][cplayer] FFmpeg version: N-128718-gb2b543c07
+[   0.002][v][cplayer] FFmpeg library versions:
+[   0.002][v][cplayer]    libavcodec      63.28.100
+[   0.002][v][cplayer]    libavdevice     63.6.100
+[   0.002][v][cplayer]    libavfilter     12.12.100
+[   0.002][v][cplayer]    libavformat     63.18.100
+[   0.002][v][cplayer]    libavutil       61.20.100
+[   0.002][v][cplayer]    libswresample   7.7.100
+[   0.002][v][cplayer]    libswscale      10.6.100
+[   0.002][v][cplayer] Configuration: -Dprefix=/__w/mpv-winbuild/mpv-winbuild/mpv-winbuild-cmake/build64/install/x86_64-w64-mingw32 -Dlibdir=/__w/mpv-winbuild/mpv-winbuild/mpv-winbuild-cmake/build64/install/x86_64-w64-mingw32/lib -Ddefault_library=shared -Dprefer_static=true -Dgpl=false -Ddebug=true -Db_ndebug=true -Doptimization=3 -Db_lto=true -Db_lto_mode=thin -Dcplayer=false -Dlibmpv=true -Dpdf-build=disabled -Dlua=enabled -Djavascript=enabled -Dsdl2-gamepad=enabled -Dlibarchive=enabled -Dlibbluray=enabled -Ddvdnav=disabled -Duchardet=enabled -Drubberband=disabled -Dlcms2=enabled -Dopenal=disabled -Dspirv-cross=enabled -Dvulkan=enabled -Dvapoursynth=enabled -Dsubrandr=enabled -Dsixel=enabled -Dgl=enabled -Degl-angle=enabled -Dlibcurl=enabled -Dc_args=-Wno-error=int-conversion --cross-file=/__w/mpv-winbuild/mpv-winbuild/mpv-winbuild-cmake/build64/meson_cross.txt
+[   0.002][v][cplayer] List of enabled features: amf build-date cplugins cuda-hwaccel cuda-interop d3d-hwaccel d3d11 d3d9-hwaccel debug dos-paths dxgi-debug-d3d11 egl-angle egl-angle-win32 ffmpeg ffnvcodec gl gl-dxinterop gl-dxinterop-d3d9 gl-win32 glob glob-win32 iconv javascript jpeg lcms2 libarchive libass libavdevice libbluray libcurl libplacebo luajit sdl2-gamepad shaderc sixel spirv-cross subrandr uchardet vaapi vaapi-win32 vapoursynth vector vk-khr-display vulkan wasapi win32 win32-desktop win32-smtc win32-threads zimg zimg-st428 zlib
+[   0.002][v][cplayer] Built with NDEBUG.
+[   0.002][v][cplayer] mpv v0.42.0-19-ga61f6c3ab Copyright © 2000-2026 mpv/MPlayer/mplayer2 projects
+[   0.002][v][cplayer]  built on Nov  9 2026 15:10:45
+[   0.002][v][cplayer] libplacebo version: v7.387.0 (v7.387.0-13-g9fabf6d-dirty)
+[   0.002][v][cplayer] FFmpeg version: N-128718-gb2b543c07
+[   0.002][v][cplayer] FFmpeg library versions:
+[   0.002][v][cplayer]    libavcodec      63.28.100
+[   0.002][v][cplayer]    libavdevice     63.6.100
+[   0.002][v][cplayer]    libavfilter     12.12.100
+[   0.002][v][cplayer]    libavformat     63.18.100
+[   0.002][v][cplayer]    libavutil       61.20.100
+[   0.002][v][cplayer]    libswresample   7.7.100
+[   0.002][v][cplayer]    libswscale      10.6.100
+[   0.002][v][cplayer] Configuration: -Dprefix=/__w/mpv-winbuild/mpv-winbuild/mpv-winbuild-cmake/build64/install/x86_64-w64-mingw32 -Dlibdir=/__w/mpv-winbuild/mpv-winbuild/mpv-winbuild-cmake/build64/install/x86_64-w64-mingw32/lib -Ddefault_library=shared -Dprefer_static=true -Dgpl=false -Ddebug=true -Db_ndebug=true -Doptimization=3 -Db_lto=true -Db_lto_mode=thin -Dcplayer=false -Dlibmpv=true -Dpdf-build=disabled -Dlua=enabled -Djavascript=enabled -Dsdl2-gamepad=enabled -Dlibarchive=enabled -Dlibbluray=enabled -Ddvdnav=disabled -Duchardet=enabled -Drubberband=disabled -Dlcms2=enabled -Dopenal=disabled -Dspirv-cross=enabled -Dvulkan=enabled -Dvapoursynth=enabled -Dsubrandr=enabled -Dsixel=enabled -Dgl=enabled -Degl-angle=enabled -Dlibcurl=enabled -Dc_args=-Wno-error=int-conversion --cross-file=/__w/mpv-winbuild/mpv-winbuild/mpv-winbuild-cmake/build64/meson_cross.txt
+[   0.002][v][cplayer] List of enabled features: amf build-date cplugins cuda-hwaccel cuda-interop d3d-hwaccel d3d11 d3d9-hwaccel debug dos-paths dxgi-debug-d3d11 egl-angle egl-angle-win32 ffmpeg ffnvcodec gl gl-dxinterop gl-dxinterop-d3d9 gl-win32 glob glob-win32 iconv javascript jpeg lcms2 libarchive libass libavdevice libbluray libcurl libplacebo luajit sdl2-gamepad shaderc sixel spirv-cross subrandr uchardet vaapi vaapi-win32 vapoursynth vector vk-khr-display vulkan wasapi win32 win32-desktop win32-smtc win32-threads zimg zimg-st428 zlib
+[   0.002][v][cplayer] Built with NDEBUG.
+[   0.002][d][global] home path: '' -> '-'
+[   0.002][d][global] user path: '~~home/' -> ''
+[   0.002][d][global] user path: '~~old_home/' -> ''
+[   0.002][d][stats] Loading lua script @stats.lua...
+[   0.002][d][console] Loading lua script @console.lua...
+[   0.002][d][auto_profiles] Loading lua script @auto_profiles.lua...
+[   0.002][d][select] Loading lua script @select.lua...
+[   0.002][d][positioning] Loading lua script @positioning.lua...
+[   0.002][d][commands] Loading lua script @commands.lua...
+[   0.002][v][clipboard] Initialized win32 clipboard backend.
+[   0.003][d][select] loading mp.defaults
+[   0.003][d][console] loading mp.defaults
+[   0.003][d][auto_profiles] loading mp.defaults
+[   0.003][d][stats] loading mp.defaults
+[   0.003][v][cplayer] Waiting for scripts...
+[   0.003][d][positioning] loading mp.defaults
+[   0.003][d][commands] loading mp.defaults
+[   0.003][d][positioning] loading @positioning.lua
+[   0.003][d][stats] loading @stats.lua
+[   0.003][d][auto_profiles] loading @auto_profiles.lua
+[   0.003][d][console] loading @console.lua
+[   0.003][d][positioning] reading options for positioning
+[   0.003][d][positioning] script-opts/positioning.conf not found.
+[   0.003][d][commands] loading @commands.lua
+[   0.003][d][select] loading @select.lua
+[   0.003][d][cplayer] Run command: define-section, flags=64, args=[name="input_positioning", contents="", flags="default"]
+[   0.003][d][cplayer] Run command: enable-section, flags=64, args=[name="input_positioning", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.003][d][cplayer] Run command: define-section, flags=64, args=[name="input_forced_positioning", contents="", flags="force"]
+[   0.003][d][cplayer] Run command: enable-section, flags=64, args=[name="input_forced_positioning", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.003][d][cplayer] Run command: loadfile, flags=64, args=[url="C:\\dev\\litewall\\spike\\target\\release\\Big_Buck_Bunny_1080_10s_5MB.mp4", flags="", index="-1", options=""]
+[   0.004][d][commands] reading options for commands
+[   0.004][d][commands] script-opts/commands.conf not found.
+[   0.004][d][cplayer] Run command: define-section, flags=64, args=[name="input_commands", contents="", flags="default"]
+[   0.004][d][cplayer] Run command: enable-section, flags=64, args=[name="input_commands", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.004][d][cplayer] Run command: define-section, flags=64, args=[name="input_forced_commands", contents="", flags="force"]
+[   0.004][d][cplayer] Run command: enable-section, flags=64, args=[name="input_forced_commands", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.004][d][auto_profiles] Destroying client handle...
+[   0.004][d][select] reading options for select
+[   0.004][d][select] script-opts/select.conf not found.
+[   0.004][d][cplayer] Run command: define-section, flags=64, args=[name="input_select", contents="", flags="default"]
+[   0.004][d][cplayer] Run command: enable-section, flags=64, args=[name="input_select", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.004][d][cplayer] Run command: define-section, flags=64, args=[name="input_forced_select", contents="", flags="force"]
+[   0.004][d][cplayer] Run command: enable-section, flags=64, args=[name="input_forced_select", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.004][d][stats] reading options for stats
+[   0.004][d][stats] script-opts/stats.conf not found.
+[   0.004][d][console] reading options for console
+[   0.004][d][console] script-opts/console.conf not found.
+[   0.004][v][cplayer] Done loading scripts.
+[   0.004][d][global] state path: 'watch_later' -> '-'
+[   0.004][v][cplayer] Running hook: auto_profiles/on_before_start_file
+[   0.004][v][cplayer] Failed sending hook command auto_profiles/on_before_start_file. Removing hook.
+[   0.004][d][global] state path: 'watch_later' -> '-'
+[   0.004][v][cplayer] Running hook: auto_profiles/on_load
+[   0.004][v][cplayer] Failed sending hook command auto_profiles/on_load. Removing hook.
+[   0.005][d][cplayer] Run command: define-section, flags=64, args=[name="input_stats", contents="", flags="default"]
+[   0.005][d][cplayer] Run command: define-section, flags=64, args=[name="input_console", contents="", flags="default"]
+[   0.005][d][cplayer] Run command: enable-section, flags=64, args=[name="input_console", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.005][d][cplayer] Run command: enable-section, flags=64, args=[name="input_stats", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.005][d][cplayer] Run command: define-section, flags=64, args=[name="input_forced_console", contents="", flags="force"]
+[   0.005][d][cplayer] Run command: define-section, flags=64, args=[name="input_forced_stats", contents="", flags="force"]
+[   0.005][d][cplayer] Run command: enable-section, flags=64, args=[name="input_forced_console", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.005][d][cplayer] Run command: enable-section, flags=64, args=[name="input_forced_stats", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.005][v][bdmv/bluray] Opening C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4
+[   0.005][v][file] Opening C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4
+[   0.005][d][file] resize stream to 131072 bytes, drop 0 bytes
+[   0.005][d][file] Stream opened successfully.
+[   0.005][v][demux] Trying demuxers for level=normal.
+[   0.005][d][demux] Trying demuxer: directory (force-level: normal)
+[   0.005][d][demux] Trying demuxer: disc (force-level: normal)
+[   0.005][d][demux] Trying demuxer: edl (force-level: normal)
+[   0.005][d][demux] Trying demuxer: cue (force-level: normal)
+[   0.005][d][demux] Trying demuxer: rawaudio (force-level: normal)
+[   0.005][d][demux] Trying demuxer: rawvideo (force-level: normal)
+[   0.005][d][demux] Trying demuxer: mkv (force-level: normal)
+[   0.005][d][demux] Trying demuxer: libarchive (force-level: normal)
+[   0.005][d][demux] Trying demuxer: subrandr (force-level: normal)
+[   0.005][d][demux] Trying demuxer: lavf (force-level: normal)
+[   0.006][v][lavf] Found 'mov,mp4,m4a,3gp,3g2,mj2' at score=100 size=2048.
+[   0.006][v][lavf] Could not set AVOption http_persistent='0'
+[   0.006][v][lavf] Could not set AVOption http_multiple='1'
+[   0.006][v][demux] Detected file format: mov,mp4,m4a,3gp,3g2,mj2 (libavformat)
+[   0.006][v][cplayer] Opening done: C:\dev\litewall\spike\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4
+[   0.006][v][find_files] Loading external files in C:\dev\litewall\spike\target\release\
+[   0.007][v][cplayer] Running hook: auto_profiles/on_preloaded
+[   0.007][v][cplayer] Failed sending hook command auto_profiles/on_preloaded. Removing hook.
+[   0.007][v][cplayer] Running hook: auto_profiles/on_loaded
+[   0.007][v][cplayer] Failed sending hook command auto_profiles/on_loaded. Removing hook.
+[   0.007][v][lavf] select track 0
+[   0.007][i][cplayer] ● Video  --vid=1  (h264 1920x1080 60 fps 4186 kbps) [default]
+[   0.007][v][vo/gpu-next/d3d11] Initializing GPU context 'd3d11'
+[   0.055][v][vo/gpu-next/d3d11] Using Direct3D 11 feature level 12_1
+[   0.055][v][vo/gpu-next/d3d11] Device Name: AMD Radeon(TM) Graphics
+[   0.055][v][vo/gpu-next/d3d11] Device ID: 1002:1900 (rev c5)
+[   0.055][v][vo/gpu-next/d3d11] Subsystem ID: 103c:8c95
+[   0.055][v][vo/gpu-next/d3d11] LUID: 00000000000155a1
+[   0.055][v][vo/gpu-next/d3d11] Initializing SPIR-V compiler 'shaderc'
+[   0.055][v][vo/gpu-next/d3d11] Using Direct3D 11.1 runtime
+[   0.055][v][vo/gpu-next/d3d11] Maximum Texture2D size: 16384x16384
+[   0.057][v][vo/gpu-next/d3d11] D3DCompiler version: 10.0.19041.7663
+[   0.061][v][vo/gpu-next/win32] DPI detected from the new API: 144
+[   0.061][v][vo/gpu-next/win32] display-fps: 120.000000
+[   0.080][v][vo/gpu-next/win32] color-profile: C:\Windows\system32\spool\drivers\color\CalibratedDisplayProfile-3.icc
+[   0.086][v][vo/gpu-next/d3d11] Using DXGI 1.2+
+[   0.087][v][vo/gpu-next/d3d11] Queried output: \\.\DISPLAY1, 2560x1600 @ 8 bits, colorspace: RGB_FULL_G22_NONE_P709 (0)
+[   0.087][v][vo/gpu-next/d3d11] Selected swapchain format R8G8B8A8_UNORM (28), attempting to utilize it.
+[   0.087][v][vo/gpu-next/d3d11] Using flip-model presentation
+[   0.087][v][vo/gpu-next/libplacebo] Initialized libplacebo v7.387.0 (v7.387.0-13-g9fabf6d-dirty) (API v387)
+[   0.087][v][vo/gpu-next/libplacebo] Using DXGI 1.2+
+[   0.087][v][vo/gpu-next/libplacebo] Using Direct3D 11 feature level 12_1
+[   0.087][v][vo/gpu-next/libplacebo] Direct3D 11 device properties:
+[   0.087][v][vo/gpu-next/libplacebo]     Device Name: AMD Radeon(TM) Graphics
+[   0.087][v][vo/gpu-next/libplacebo]     Device ID: 1002:1900 (rev c5)
+[   0.087][v][vo/gpu-next/libplacebo]     Subsystem ID: 103c:8c95
+[   0.087][v][vo/gpu-next/libplacebo]     LUID: 00000000000155a1
+[   0.087][v][vo/gpu-next/libplacebo]     Driver version: 32.0.32015.7029
+[   0.087][v][vo/gpu-next/libplacebo] shaderc SPIR-V version 1.6 rev 1
+[   0.087][v][vo/gpu-next/libplacebo] Initialized SPIR-V compiler 'shaderc'
+[   0.087][v][vo/gpu-next/libplacebo] Using Direct3D 11.4 runtime
+[   0.087][v][vo/gpu-next/libplacebo] D3DCompiler version: 10.0.19041.7663
+[   0.087][v][vo/gpu-next/libplacebo] GPU information:
+[   0.087][v][vo/gpu-next/libplacebo]     GLSL version: 450 (vulkan)
+[   0.087][v][vo/gpu-next/libplacebo]       max_shmem_size:            32768
+[   0.087][v][vo/gpu-next/libplacebo]       max_group_threads:         1024
+[   0.087][v][vo/gpu-next/libplacebo]       max_group_size[0]:         1024
+[   0.087][v][vo/gpu-next/libplacebo]       max_group_size[1]:         1024
+[   0.087][v][vo/gpu-next/libplacebo]       max_group_size[2]:         64
+[   0.087][v][vo/gpu-next/libplacebo]       subgroup_size:             0
+[   0.087][v][vo/gpu-next/libplacebo]       min_gather_offset:         -32
+[   0.088][v][vo/gpu-next/libplacebo]       max_gather_offset:         31
+[   0.088][v][vo/gpu-next/libplacebo]     Limits:
+[   0.088][v][vo/gpu-next/libplacebo]       thread_safe:               0
+[   0.088][v][vo/gpu-next/libplacebo]       callbacks:                 0
+[   0.088][v][vo/gpu-next/libplacebo]       max_buf_size:              2123016192
+[   0.088][v][vo/gpu-next/libplacebo]       max_ubo_size:              65536
+[   0.088][v][vo/gpu-next/libplacebo]       max_ssbo_size:             2123016192
+[   0.088][v][vo/gpu-next/libplacebo]       max_vbo_size:              2123016192
+[   0.088][v][vo/gpu-next/libplacebo]       max_mapped_size:           0
+[   0.088][v][vo/gpu-next/libplacebo]       max_buffer_texels:         134217728
+[   0.088][v][vo/gpu-next/libplacebo]       align_host_ptr:            0
+[   0.088][v][vo/gpu-next/libplacebo]       host_cached:               0
+[   0.088][v][vo/gpu-next/libplacebo]       max_tex_1d_dim:            16384
+[   0.088][v][vo/gpu-next/libplacebo]       max_tex_2d_dim:            16384
+[   0.088][v][vo/gpu-next/libplacebo]       max_tex_3d_dim:            2048
+[   0.088][v][vo/gpu-next/libplacebo]       blittable_1d_3d:           1
+[   0.088][v][vo/gpu-next/libplacebo]       buf_transfer:              0
+[   0.088][v][vo/gpu-next/libplacebo]       align_tex_xfer_pitch:      1
+[   0.088][v][vo/gpu-next/libplacebo]       align_tex_xfer_offset:     32
+[   0.088][v][vo/gpu-next/libplacebo]       max_variable_comps:        0
+[   0.088][v][vo/gpu-next/libplacebo]       max_constants:             0
+[   0.088][v][vo/gpu-next/libplacebo]       max_pushc_size:            0
+[   0.088][v][vo/gpu-next/libplacebo]       align_vertex_stride:       1
+[   0.088][v][vo/gpu-next/libplacebo]       max_dispatch[0]:           65535
+[   0.088][v][vo/gpu-next/libplacebo]       max_dispatch[1]:           65535
+[   0.088][v][vo/gpu-next/libplacebo]       max_dispatch[2]:           65535
+[   0.088][v][vo/gpu-next/libplacebo]       fragment_queues:           1
+[   0.088][v][vo/gpu-next/libplacebo]       compute_queues:            1
+[   0.088][d][vo/gpu-next/libplacebo] GPU texture formats:
+[   0.088][d][vo/gpu-next/libplacebo]     NAME                 TYPE   SIZE COMP CAPS         EMU DEPTH         HOST_BITS     GLSL_TYPE  GLSL_FMT   FOURCC
+[   0.088][d][vo/gpu-next/libplacebo]     bgra4                UNORM  2    BGRA SsLRbB---HWG n   {4  4  4  4 } {4  4  4  4 }                       AR12  
+[   0.088][d][vo/gpu-next/libplacebo]     bgr5a1               UNORM  2    BGRA SsLRbB---HWG n   {5  5  5  1 } {5  5  5  1 }                       AR15  
+[   0.088][d][vo/gpu-next/libplacebo]     bgr565               UNORM  2    BGR  SsLRbB---HWG n   {5  6  5  0 } {5  6  5  0 }                       RG16  
+[   0.088][d][vo/gpu-next/libplacebo]     r8                   UNORM  1    R    SsLRbBVutHWG n   {8  0  0  0 } {8  0  0  0 } float      r8         R8    
+[   0.088][d][vo/gpu-next/libplacebo]     r8s                  SNORM  1    R    SsLRbBVutHWG n   {8  0  0  0 } {8  0  0  0 } float      r8_snorm         
+[   0.088][d][vo/gpu-next/libplacebo]     rg8                  UNORM  2    RG   SsLRbBVutHWG n   {8  8  0  0 } {8  8  0  0 } vec2       rg8        GR88  
+[   0.088][d][vo/gpu-next/libplacebo]     rg8s                 SNORM  2    RG   SsLRbBVutHWG n   {8  8  0  0 } {8  8  0  0 } vec2       rg8_snorm        
+[   0.088][d][vo/gpu-next/libplacebo]     rgba8                UNORM  4    RGBA SsLRbBVutHWG n   {8  8  8  8 } {8  8  8  8 } vec4       rgba8      AB24  
+[   0.088][d][vo/gpu-next/libplacebo]     rgba8s               SNORM  4    RGBA SsLRbBVutHWG n   {8  8  8  8 } {8  8  8  8 } vec4       rgba8_snorm       
+[   0.088][d][vo/gpu-next/libplacebo]     bgra8                UNORM  4    BGRA SsLRbBVutHWG n   {8  8  8  8 } {8  8  8  8 } vec4                  AR24  
+[   0.088][d][vo/gpu-next/libplacebo]     rgb10a2              UNORM  4    RGBA SsLRbBVutHWG n   {10 10 10 2 } {10 10 10 2 } vec4       rgb10_a2   AB30  
+[   0.088][d][vo/gpu-next/libplacebo]     rg11b10f             FLOAT  4    RGB  SsLRbBVutHWG n   {11 11 10 0 } {11 11 10 0 } vec3       r11f_g11f_b10f       
+[   0.088][d][vo/gpu-next/libplacebo]     r16                  UNORM  2    R    SsLRbBVutHWG n   {16 0  0  0 } {16 0  0  0 } float      r16        R16   
+[   0.088][d][vo/gpu-next/libplacebo]     r16hf                FLOAT  2    R    SsLRbBVutHWG n   {16 0  0  0 } {16 0  0  0 } float      r16f             
+[   0.088][d][vo/gpu-next/libplacebo]     r16s                 SNORM  2    R    SsLRbBVutHWG n   {16 0  0  0 } {16 0  0  0 } float      r16_snorm        
+[   0.088][d][vo/gpu-next/libplacebo]     rg16                 UNORM  4    RG   SsLRbBVutHWG n   {16 16 0  0 } {16 16 0  0 } vec2       rg16       GR32  
+[   0.088][d][vo/gpu-next/libplacebo]     rg16hf               FLOAT  4    RG   SsLRbBVutHWG n   {16 16 0  0 } {16 16 0  0 } vec2       rg16f            
+[   0.088][d][vo/gpu-next/libplacebo]     rg16s                SNORM  4    RG   SsLRbBVutHWG n   {16 16 0  0 } {16 16 0  0 } vec2       rg16_snorm       
+[   0.088][d][vo/gpu-next/libplacebo]     rgba16               UNORM  8    RGBA SsLRbBVutHWG n   {16 16 16 16} {16 16 16 16} vec4       rgba16     AB48  
+[   0.088][d][vo/gpu-next/libplacebo]     rgba16hf             FLOAT  8    RGBA SsLRbBVutHWG n   {16 16 16 16} {16 16 16 16} vec4       rgba16f    AB4H  
+[   0.088][d][vo/gpu-next/libplacebo]     rgba16s              SNORM  8    RGBA SsLRbBVutHWG n   {16 16 16 16} {16 16 16 16} vec4       rgba16_snorm       
+[   0.088][d][vo/gpu-next/libplacebo]     r32f                 FLOAT  4    R    SsLRbBVutHWG n   {32 0  0  0 } {32 0  0  0 } float      r32f             
+[   0.088][d][vo/gpu-next/libplacebo]     rg32f                FLOAT  8    RG   SsLRbBVutHWG n   {32 32 0  0 } {32 32 0  0 } vec2       rg32f            
+[   0.088][d][vo/gpu-next/libplacebo]     rgba32f              FLOAT  16   RGBA SsLRbBVutHWG n   {32 32 32 32} {32 32 32 32} vec4       rgba32f          
+[   0.088][d][vo/gpu-next/libplacebo]     bgrx8                UNORM  4    BGR  S-LRb-Vu-H-G n   {8  8  8  0 } {8  8  8  0 } vec3                        
+[   0.088][d][vo/gpu-next/libplacebo]     r8i                  SINT   1    R    Ss-R-BVutHW- n   {8  0  0  0 } {8  0  0  0 } int        r8i              
+[   0.088][d][vo/gpu-next/libplacebo]     r8u                  UINT   1    R    Ss-R-BVutHW- n   {8  0  0  0 } {8  0  0  0 } uint       r8ui             
+[   0.088][d][vo/gpu-next/libplacebo]     rg8i                 SINT   2    RG   Ss-R-BVutHW- n   {8  8  0  0 } {8  8  0  0 } ivec2      rg8i             
+[   0.088][d][vo/gpu-next/libplacebo]     rg8u                 UINT   2    RG   Ss-R-BVutHW- n   {8  8  0  0 } {8  8  0  0 } uvec2      rg8ui            
+[   0.088][d][vo/gpu-next/libplacebo]     rgba8i               SINT   4    RGBA Ss-R-BVutHW- n   {8  8  8  8 } {8  8  8  8 } ivec4      rgba8i           
+[   0.088][d][vo/gpu-next/libplacebo]     rgba8u               UINT   4    RGBA Ss-R-BVutHW- n   {8  8  8  8 } {8  8  8  8 } uvec4      rgba8ui          
+[   0.088][d][vo/gpu-next/libplacebo]     rgb10a2u             UINT   4    RGBA Ss-R-BVutHW- n   {10 10 10 2 } {10 10 10 2 } uvec4      rgb10_a2ui       
+[   0.088][d][vo/gpu-next/libplacebo]     r16i                 SINT   2    R    Ss-R-BVutHW- n   {16 0  0  0 } {16 0  0  0 } int        r16i             
+[   0.088][d][vo/gpu-next/libplacebo]     r16u                 UINT   2    R    Ss-R-BVutHW- n   {16 0  0  0 } {16 0  0  0 } uint       r16ui            
+[   0.088][d][vo/gpu-next/libplacebo]     rg16i                SINT   4    RG   Ss-R-BVutHW- n   {16 16 0  0 } {16 16 0  0 } ivec2      rg16i            
+[   0.088][d][vo/gpu-next/libplacebo]     rg16u                UINT   4    RG   Ss-R-BVutHW- n   {16 16 0  0 } {16 16 0  0 } uvec2      rg16ui           
+[   0.088][d][vo/gpu-next/libplacebo]     rgba16i              SINT   8    RGBA Ss-R-BVutHW- n   {16 16 16 16} {16 16 16 16} ivec4      rgba16i          
+[   0.088][d][vo/gpu-next/libplacebo]     rgba16u              UINT   8    RGBA Ss-R-BVutHW- n   {16 16 16 16} {16 16 16 16} uvec4      rgba16ui         
+[   0.088][d][vo/gpu-next/libplacebo]     r32i                 SINT   4    R    Ss-R-BVutHW- n   {32 0  0  0 } {32 0  0  0 } int        r32i             
+[   0.088][d][vo/gpu-next/libplacebo]     r32u                 UINT   4    R    Ss-R-BVutHW- n   {32 0  0  0 } {32 0  0  0 } uint       r32ui            
+[   0.088][d][vo/gpu-next/libplacebo]     rg32i                SINT   8    RG   Ss-R-BVutHW- n   {32 32 0  0 } {32 32 0  0 } ivec2      rg32i            
+[   0.088][d][vo/gpu-next/libplacebo]     rg32u                UINT   8    RG   Ss-R-BVutHW- n   {32 32 0  0 } {32 32 0  0 } uvec2      rg32ui           
+[   0.088][d][vo/gpu-next/libplacebo]     rgba32i              SINT   16   RGBA Ss-R-BVutHW- n   {32 32 32 32} {32 32 32 32} ivec4      rgba32i          
+[   0.088][d][vo/gpu-next/libplacebo]     rgba32u              UINT   16   RGBA Ss-R-BVutHW- n   {32 32 32 32} {32 32 32 32} uvec4      rgba32ui         
+[   0.088][d][vo/gpu-next/libplacebo]     rgb32f               FLOAT  12   RGB  S-----Vu-H-- n   {32 32 32 0 } {32 32 32 0 } vec3                        
+[   0.088][d][vo/gpu-next/libplacebo]     rgb32i               SINT   12   RGB  S-----Vu-H-- n   {32 32 32 0 } {32 32 32 0 } ivec3                       
+[   0.088][d][vo/gpu-next/libplacebo]     rgb32u               UINT   12   RGB  S-----Vu-H-- n   {32 32 32 0 } {32 32 32 0 } uvec3                       
+[   0.088][d][vo/gpu-next/libplacebo]     rgb8                 UNORM  3    RGB  SsLRbBVutHWG y   {8  8  8  0 } {8  8  8  0 } vec3                  BG24  
+[   0.088][d][vo/gpu-next/libplacebo]     rgb16                UNORM  6    RGB  SsLRbBVutHWG y   {16 16 16 0 } {16 16 16 0 } vec3                        
+[   0.088][d][vo/gpu-next/libplacebo]     rgb16hf              FLOAT  6    RGB  SsLRbBVutHWG y   {16 16 16 0 } {16 16 16 0 } vec3                        
+[   0.088][d][vo/gpu-next/libplacebo]     r16f                 FLOAT  4    R    SsLRbBVutHWG y   {16 0  0  0 } {32 0  0  0 } float      r16f             
+[   0.088][d][vo/gpu-next/libplacebo]     rg16f                FLOAT  8    RG   SsLRbBVutHWG y   {16 16 0  0 } {32 32 0  0 } vec2       rg16f            
+[   0.088][d][vo/gpu-next/libplacebo]     rgb16f               FLOAT  12   RGB  SsLRbBVutHWG y   {16 16 16 0 } {32 32 32 0 } vec3                        
+[   0.088][d][vo/gpu-next/libplacebo]     rgba16f              FLOAT  16   RGBA SsLRbBVutHWG y   {16 16 16 16} {32 32 32 32} vec4       rgba16f          
+[   0.088][v][vo/gpu-next/libplacebo] Using flip-model presentation
+[   0.088][v][vo/gpu-next/libplacebo] Initial swap chain configuration: format: R10G10B10A2_UNORM, color space: RGB_FULL_G22_NONE_P709.
+[   0.088][d][global] cache path: '' -> '-'
+[   0.088][d][vo/gpu-next] Render options updated, flushing renderer cache.
+[   0.088][v][vo/gpu-next/libplacebo] Attempting to reconfigure swap chain format: R8G8B8A8_UNORM -> R10G10B10A2_UNORM
+[   0.089][v][vo/gpu-next] Assuming 120.000000 FPS for display sync.
+[   0.089][v][vd] Container reported FPS: 60.000000
+[   0.089][v][vd] Codec list:
+[   0.089][v][vd]     h264 - H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10
+[   0.089][v][vd]     h264_qsv (h264) - H264 video (Intel Quick Sync Video acceleration)
+[   0.089][v][vd]     h264_amf (h264) - H264 AMD AMF video decoder
+[   0.089][v][vd]     h264_cuvid (h264) - Nvidia CUVID H264 decoder
+[   0.089][v][vd] Opening decoder h264
+[   0.089][v][vd] Looking at hwdec h264-d3d11va...
+[   0.089][v][vo/gpu-next] Loading hwdec drivers for format: 'd3d11'
+[   0.089][v][vo/gpu-next] Loading hwdec driver 'd3d11va'
+[   0.090][v][vo/gpu-next] Loading hwdec driver 'd3d11-egl'
+[   0.090][v][vo/gpu-next] Loading failed.
+[   0.090][v][vd] Trying hardware decoding via h264-d3d11va.
+[   0.090][v][vd] Requesting 4 threads for decoding.
+[   0.090][v][vd] Selected decoder: h264 - H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10
+[   0.090][v][vf] User filter list:
+[   0.090][v][vf]   (empty)
+[   0.091][v][cplayer] Starting playback...
+[   0.091][d][osd/libass] ASS library version: 0x1705000 (runtime 0x1705000)
+[   0.091][v][osd/libass] libass API version: 0x1705000
+[   0.091][v][osd/libass] libass source: meson, commit: 0.17.5-24-gfada3a6901319b2ba36ff40ec25c805c2bac0e60
+[   0.092][v][osd/libass] Shaper: FriBidi 1.0.18 (SIMPLE) HarfBuzz-ng 15.1.0 (COMPLEX)
+[   0.092][v][osd/libass] Setting up fonts...
+[   0.092][v][osd/libass] Using font provider directwrite (with GDI)
+[   0.092][v][osd/libass] Done.
+[   0.093][d][lavf] stream 0: resize index to 128
+[   0.093][v][vd] Pixel formats supported by decoder: vulkan cuda cuarray dxva2_vld d3d11va_vld d3d11 d3d12 vaapi yuv420p
+[   0.093][v][vd] Codec profile: High (0x64)
+[   0.094][v][vd] Allocated a fixed pool of 30 hw surfaces.
+[   0.094][v][vd] Requesting pixfmt 'd3d11' from decoder.
+[   0.094][d][ffmpeg/video] h264: Decoder GUIDs reported as supported:
+[   0.094][d][ffmpeg/video] h264: {c58b9a06-7e89-11e1-bb00-70b34824019b} 103
+[   0.094][d][ffmpeg/video] h264: {1b81be68-a0c7-11d3-b984-00c04f2e73c5} 103
+[   0.094][d][ffmpeg/video] h264: {4245f676-2bbc-4166-a0bb-54e7b849c380} 103
+[   0.094][d][ffmpeg/video] h264: {9901ccd3-ca12-4b7e-867a-e2223d9255c3} 103
+[   0.094][d][ffmpeg/video] h264: {d79be8da-0cf1-4c81-b82a-69a4e236f43d} 103
+[   0.094][d][ffmpeg/video] h264: {f9aaccbb-c2b6-4cfc-8779-5707b1760552} 103
+[   0.094][d][ffmpeg/video] h264: {d1c20509-ae7b-4e72-ae3b-49f88d58992f} 103 107
+[   0.094][d][ffmpeg/video] h264: {5b11d51b-2f4c-4452-bcc3-09f2a1160cc0} 103
+[   0.094][v][lavf] EOF reached.
+[   0.094][d][ffmpeg/video] h264: {ea72396a-67ec-4781-bede-56f498f04ef2} 103
+[   0.094][d][ffmpeg/video] h264: {c152ca8f-738c-461b-ad89-fc292cf8f162} 103
+[   0.095][d][ffmpeg/video] h264: {514a356c-7027-4aff-8a60-afd2c1f672f1} 103
+[   0.095][d][ffmpeg/video] h264: {107af0e0-ef1a-4d19-aba8-67a163073d13} 103 104
+[   0.095][d][ffmpeg/video] h264: {65d1fa41-58af-453a-9cab-5d981156da9f} 103 104
+[   0.095][d][ffmpeg/video] h264: {2db154b6-dbb2-4079-a3ff-60d7a898a6ab} 103 104
+[   0.095][d][ffmpeg/video] h264: {c74a3fd0-d713-4581-a02e-8edfb112ace3} 103 104
+[   0.095][d][ffmpeg/video] h264: {463707f8-a1d0-4585-876d-83aa6d60b89e} 103
+[   0.095][d][ffmpeg/video] h264: {a4c749ef-6ecf-48aa-8448-50a7a1165ff7} 103 104
+[   0.095][d][ffmpeg/video] h264: {b8be4ccb-cf53-46ba-8d59-d6b8a6da5d2a} 103 104
+[   0.095][d][ffmpeg/video] h264: {603a4756-a864-4f91-bb62-2c935b7a1391} 103
+[   0.095][d][ffmpeg/video] h264: {84ad67f6-4c21-419a-9f0b-24f0578906c1} 103
+[   0.096][d][ffmpeg/video] h264: Reinit context to 1920x1088, pix_fmt: d3d11
+[   0.108][i][vd] Using hardware decoding (d3d11va).
+[   0.108][v][vd] Decoder format: 1920x1080 d3d11[nv12] auto/auto/auto/auto/auto CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[   0.109][v][vd] Using container aspect ratio.
+[   0.109][v][vf] [in] 1920x1080 d3d11[nv12] bt.709/bt.709/bt.1886/limited/display CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[   0.109][v][vf] [userdeint] 1920x1080 d3d11[nv12] bt.709/bt.709/bt.1886/limited/display CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[   0.109][v][vf] [userdeint] (disabled)
+[   0.109][v][vf] [autovflip] 1920x1080 d3d11[nv12] bt.709/bt.709/bt.1886/limited/display CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[   0.109][v][vf] [autovflip] (disabled)
+[   0.109][v][vf] [autorotate] 1920x1080 d3d11[nv12] bt.709/bt.709/bt.1886/limited/display CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[   0.109][v][vf] [autorotate] (disabled)
+[   0.109][v][vf] [convert] 1920x1080 d3d11[nv12] bt.709/bt.709/bt.1886/limited/display CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[   0.109][v][vo/gpu-next] Loading hwdec drivers for format: 'd3d11'
+[   0.109][v][vo/gpu-next] Loading hwdec driver 'd3d11-egl'
+[   0.109][v][vo/gpu-next] Loading failed.
+[   0.109][d][hwupload] looking at format d3d11/nv12
+[   0.109][d][hwupload]   supports: nv12 p010 bgra x2bgr10 rgbaf16 yuyv422 p016 p012 yuv420p
+[   0.109][d][hwupload] looking at format d3d11/p010
+[   0.109][d][hwupload]   supports: nv12 p010 bgra x2bgr10 rgbaf16 yuyv422 p016 p012 yuv420p
+[   0.109][d][hwupload] looking at format d3d11/bgra
+[   0.109][d][hwupload]   supports: nv12 p010 bgra x2bgr10 rgbaf16 yuyv422 p016 p012 yuv420p
+[   0.109][d][hwupload] looking at format d3d11/x2bgr10
+[   0.109][d][hwupload]   supports: nv12 p010 bgra x2bgr10 rgbaf16 yuyv422 p016 p012 yuv420p
+[   0.109][d][hwupload] looking at format d3d11/rgbaf16
+[   0.109][d][hwupload]   supports: nv12 p010 bgra x2bgr10 rgbaf16 yuyv422 p016 p012 yuv420p
+[   0.109][d][hwupload] looking at format d3d11/yuyv422
+[   0.109][d][hwupload]   not supported by VO
+[   0.109][d][hwupload] looking at format d3d11/p016
+[   0.109][d][hwupload]   supports: nv12 p010 bgra x2bgr10 rgbaf16 yuyv422 p016 p012 yuv420p
+[   0.109][d][hwupload] looking at format d3d11/p012
+[   0.109][d][hwupload]   supports: nv12 p010 bgra x2bgr10 rgbaf16 yuyv422 p016 p012 yuv420p
+[   0.109][d][hwupload] looking at format d3d11/yuv420p
+[   0.109][d][hwupload]   not supported by VO
+[   0.109][v][vf] [out] 1920x1080 d3d11[nv12] bt.709/bt.709/bt.1886/limited/display CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[   0.110][i][cplayer] VO: [gpu-next] 1920x1080 d3d11[nv12]
+[   0.110][v][cplayer] VO: Description: Video output based on libplacebo
+[   0.110][v][vo/gpu-next] reconfig to 1920x1080 d3d11[nv12] bt.709/bt.709/bt.1886/limited/display CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[   0.110][d][vo/gpu-next] max content size: 2560x1600
+[   0.110][d][vo/gpu-next] monitor size: 2560x1600
+[   0.111][v][vo/gpu-next] Window size: 2560x1600 (Borders: l=0 t=0 r=0 b=0)
+[   0.111][v][vo/gpu-next] Video source: 1920x1080 (1:1)
+[   0.111][v][vo/gpu-next] Video display: (95, 0) 1730x1080 -> (0, 0) 2560x1600
+[   0.111][v][vo/gpu-next] Video scale: 1.479769/1.481481
+[   0.111][v][vo/gpu-next] OSD borders: l=-142 t=0 r=-142 b=0
+[   0.111][v][vo/gpu-next] Video borders: l=0 t=0 r=0 b=0
+[   0.111][v][vo/gpu-next] Window size: 2560x1600 (Borders: l=0 t=0 r=0 b=0)
+[   0.111][v][vo/gpu-next] Video source: 1920x1080 (1:1)
+[   0.111][v][vo/gpu-next] Video display: (95, 0) 1730x1080 -> (0, 0) 2560x1600
+[   0.111][v][vo/gpu-next] Video scale: 1.479769/1.481481
+[   0.111][v][vo/gpu-next] OSD borders: l=-142 t=0 r=-142 b=0
+[   0.111][v][vo/gpu-next] Video borders: l=0 t=0 r=0 b=0
+[   0.112][d][vo/gpu-next/libplacebo] vertex shader source:
+[   0.112][d][vo/gpu-next/libplacebo] [  1] #version 450
+[   0.112][d][vo/gpu-next/libplacebo] [  2] layout(std140, binding=2) uniform _14 {
+[   0.112][d][vo/gpu-next/libplacebo] [  3]     layout(offset=0) mat3 _6;
+[   0.112][d][vo/gpu-next/libplacebo] [  4]     layout(offset=48) vec3 _7;
+[   0.112][d][vo/gpu-next/libplacebo] [  5] };
+[   0.112][d][vo/gpu-next/libplacebo] [  6] layout(location=0) in vec2 _15;
+[   0.112][d][vo/gpu-next/libplacebo] [  7] layout(location=0) out vec2 _8003;
+[   0.112][d][vo/gpu-next/libplacebo] [  8] layout(location=1) in vec2 _16;
+[   0.112][d][vo/gpu-next/libplacebo] [  9] layout(location=1) out vec2 _4003;
+[   0.112][d][vo/gpu-next/libplacebo] [ 10] layout(location=2) in vec2 _17;
+[   0.112][d][vo/gpu-next/libplacebo] [ 11] void main() {
+[   0.112][d][vo/gpu-next/libplacebo] [ 12] _8003 = _15;
+[   0.112][d][vo/gpu-next/libplacebo] [ 13] _4003 = _16;
+[   0.112][d][vo/gpu-next/libplacebo] [ 14] vec2 va_pos = _17; 
+[   0.112][d][vo/gpu-next/libplacebo] [ 15] gl_Position = vec4(va_pos, 0.0, 1.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 16] }
+[   0.112][d][vo/gpu-next/libplacebo] fragment shader source:
+[   0.112][d][vo/gpu-next/libplacebo] [  1] #version 450
+[   0.112][d][vo/gpu-next/libplacebo] [  2] #extension GL_ARB_uniform_buffer_object : enable
+[   0.112][d][vo/gpu-next/libplacebo] [  3] #extension GL_ARB_texture_gather : enable
+[   0.112][d][vo/gpu-next/libplacebo] [  4] #define PRECISE precise 
+[   0.112][d][vo/gpu-next/libplacebo] [  5] layout(binding=0) uniform  sampler2D _8002;
+[   0.112][d][vo/gpu-next/libplacebo] [  6] layout(binding=1) uniform  sampler2D _4002;
+[   0.112][d][vo/gpu-next/libplacebo] [  7] layout(std140, binding=2) uniform _14 {
+[   0.112][d][vo/gpu-next/libplacebo] [  8]     layout(offset=0) mat3 _6;
+[   0.112][d][vo/gpu-next/libplacebo] [  9]     layout(offset=48) vec3 _7;
+[   0.112][d][vo/gpu-next/libplacebo] [ 10] };
+[   0.112][d][vo/gpu-next/libplacebo] [ 11] layout(location=0) in vec2 _8003;
+[   0.112][d][vo/gpu-next/libplacebo] [ 12] layout(location=1) in vec2 _4003;
+[   0.112][d][vo/gpu-next/libplacebo] [ 13] layout(location=0) out vec4 out_color;
+[   0.112][d][vo/gpu-next/libplacebo] [ 14] 
+[   0.112][d][vo/gpu-next/libplacebo] [ 15] const float _2 = float(0.062745101749897); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 16] const float _3 = float(0.501960813999176); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 17] const float _8004 = float(1.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 18] vec4 _8001() {
+[   0.112][d][vo/gpu-next/libplacebo] [ 19] // pl_shader_sample_direct                                  
+[   0.112][d][vo/gpu-next/libplacebo] [ 20] vec4 color = vec4(_8004) * vec4(textureLod(_8002, _8003, 0.0));   
+[   0.112][d][vo/gpu-next/libplacebo] [ 21] return color;
+[   0.112][d][vo/gpu-next/libplacebo] [ 22] }
+[   0.112][d][vo/gpu-next/libplacebo] [ 23] 
+[   0.112][d][vo/gpu-next/libplacebo] [ 24] const float _4 = float(1.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 25] const float _4004 = float(1.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 26] vec4 _4001() {
+[   0.112][d][vo/gpu-next/libplacebo] [ 27] // pl_shader_sample_direct                                  
+[   0.112][d][vo/gpu-next/libplacebo] [ 28] vec4 color = vec4(_4004) * vec4(textureLod(_4002, _4003, 0.0));   
+[   0.112][d][vo/gpu-next/libplacebo] [ 29] return color;
+[   0.112][d][vo/gpu-next/libplacebo] [ 30] }
+[   0.112][d][vo/gpu-next/libplacebo] [ 31] 
+[   0.112][d][vo/gpu-next/libplacebo] [ 32] const float _5 = float(1.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 33] const float _8 = float(1023.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 34] const float _9 = float(0.0009775171056389809); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 35] const float _b = float(0.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 36] const float _c = float(1.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 37] const float _d = float(0.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 38] const float _e = float(1.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 39] const float _f = float(0.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 40] const float _10 = float(1.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 41] const float _11 = float(0.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 42] const float _12 = float(1.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 43] vec4 _1() {
+[   0.112][d][vo/gpu-next/libplacebo] [ 44] vec4 color = vec4(_2, vec2(_3), 1.0);   
+[   0.112][d][vo/gpu-next/libplacebo] [ 45] // pass_read_image                        
+[   0.112][d][vo/gpu-next/libplacebo] [ 46] {                                         
+[   0.112][d][vo/gpu-next/libplacebo] [ 47] vec4 tmp;                                 
+[   0.112][d][vo/gpu-next/libplacebo] [ 48] tmp = vec4(_4) * _8001(); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 49] color[0] = tmp[0];
+[   0.112][d][vo/gpu-next/libplacebo] [ 50] tmp = vec4(_5) * _4001(); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 51] color[1] = tmp[0];
+[   0.112][d][vo/gpu-next/libplacebo] [ 52] color[2] = tmp[1];
+[   0.112][d][vo/gpu-next/libplacebo] [ 53] }
+[   0.112][d][vo/gpu-next/libplacebo] [ 54] // pl_shader_decode_color 
+[   0.112][d][vo/gpu-next/libplacebo] [ 55] { 
+[   0.112][d][vo/gpu-next/libplacebo] [ 56] color.rgb = _6 * color.rgb + _7; 
+[   0.112][d][vo/gpu-next/libplacebo] [ 57] }
+[   0.112][d][vo/gpu-next/libplacebo] [ 58] // pl_shader_encode_color 
+[   0.112][d][vo/gpu-next/libplacebo] [ 59] { 
+[   0.112][d][vo/gpu-next/libplacebo] [ 60] }
+[   0.112][d][vo/gpu-next/libplacebo] [ 61] color.rgba = round(color.rgba * _8) * _9; 
+[   0.112][d][vo/gpu-next/libplacebo] [ 62] vec4 _a = color;                 
+[   0.112][d][vo/gpu-next/libplacebo] [ 63] color = vec4(0.0, 0.0, 0.0, 1.0); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 64] color[0] = clamp(_a[0], _b, _c); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 65] color[1] = clamp(_a[1], _d, _e); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 66] color[2] = clamp(_a[2], _f, _10); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 67] color[3] = clamp(_a[3], _11, _12); 
+[   0.112][d][vo/gpu-next/libplacebo] [ 68] return color;
+[   0.112][d][vo/gpu-next/libplacebo] [ 69] }
+[   0.112][d][vo/gpu-next/libplacebo] [ 70] 
+[   0.112][d][vo/gpu-next/libplacebo] [ 71] void main() {
+[   0.112][d][vo/gpu-next/libplacebo] [ 72] out_color = _1();
+[   0.112][d][vo/gpu-next/libplacebo] [ 73] }
+[   0.184][d][vo/gpu-next/libplacebo] shaderc compile status 'success' (0 errors, 0 warnings)
+[   0.185][v][vo/gpu-next/libplacebo] Spent 72.455 ms translating GLSL to SPIR-V
+[   0.185][d][vo/gpu-next/libplacebo] Spent 0.280 ms translating SPIR-V to HLSL
+[   0.186][d][vo/gpu-next/libplacebo] Spent 1.238 ms translating HLSL to DXBC
+[   0.186][d][vo/gpu-next/libplacebo] vertex shader HLSL source:
+[   0.186][d][vo/gpu-next/libplacebo] [  1] static float4 gl_Position;
+[   0.186][d][vo/gpu-next/libplacebo] [  2] static float2 _9;
+[   0.186][d][vo/gpu-next/libplacebo] [  3] static float2 _11;
+[   0.186][d][vo/gpu-next/libplacebo] [  4] static float2 _13;
+[   0.186][d][vo/gpu-next/libplacebo] [  5] static float2 _14;
+[   0.186][d][vo/gpu-next/libplacebo] [  6] static float2 _18;
+[   0.186][d][vo/gpu-next/libplacebo] [  7] 
+[   0.186][d][vo/gpu-next/libplacebo] [  8] struct SPIRV_Cross_Input
+[   0.186][d][vo/gpu-next/libplacebo] [  9] {
+[   0.186][d][vo/gpu-next/libplacebo] [ 10]     float2 _11 : TEXCOORD0;
+[   0.186][d][vo/gpu-next/libplacebo] [ 11]     float2 _14 : TEXCOORD1;
+[   0.186][d][vo/gpu-next/libplacebo] [ 12]     float2 _18 : TEXCOORD2;
+[   0.186][d][vo/gpu-next/libplacebo] [ 13] };
+[   0.186][d][vo/gpu-next/libplacebo] [ 14] 
+[   0.186][d][vo/gpu-next/libplacebo] [ 15] struct SPIRV_Cross_Output
+[   0.186][d][vo/gpu-next/libplacebo] [ 16] {
+[   0.186][d][vo/gpu-next/libplacebo] [ 17]     float2 _9 : TEXCOORD0;
+[   0.186][d][vo/gpu-next/libplacebo] [ 18]     float2 _13 : TEXCOORD1;
+[   0.186][d][vo/gpu-next/libplacebo] [ 19]     float4 gl_Position : SV_Position;
+[   0.186][d][vo/gpu-next/libplacebo] [ 20] };
+[   0.186][d][vo/gpu-next/libplacebo] [ 21] 
+[   0.186][d][vo/gpu-next/libplacebo] [ 22] void vert_main()
+[   0.186][d][vo/gpu-next/libplacebo] [ 23] {
+[   0.186][d][vo/gpu-next/libplacebo] [ 24]     _9 = _11;
+[   0.186][d][vo/gpu-next/libplacebo] [ 25]     _13 = _14;
+[   0.186][d][vo/gpu-next/libplacebo] [ 26]     gl_Position = float4(_18, 0.0f, 1.0f);
+[   0.186][d][vo/gpu-next/libplacebo] [ 27]     gl_Position.y = -gl_Position.y;
+[   0.186][d][vo/gpu-next/libplacebo] [ 28] }
+[   0.186][d][vo/gpu-next/libplacebo] [ 29] 
+[   0.186][d][vo/gpu-next/libplacebo] [ 30] SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+[   0.186][d][vo/gpu-next/libplacebo] [ 31] {
+[   0.186][d][vo/gpu-next/libplacebo] [ 32]     _11 = stage_input._11;
+[   0.186][d][vo/gpu-next/libplacebo] [ 33]     _14 = stage_input._14;
+[   0.186][d][vo/gpu-next/libplacebo] [ 34]     _18 = stage_input._18;
+[   0.186][d][vo/gpu-next/libplacebo] [ 35]     vert_main();
+[   0.186][d][vo/gpu-next/libplacebo] [ 36]     SPIRV_Cross_Output stage_output;
+[   0.186][d][vo/gpu-next/libplacebo] [ 37]     stage_output.gl_Position = gl_Position;
+[   0.186][d][vo/gpu-next/libplacebo] [ 38]     stage_output._9 = _9;
+[   0.186][d][vo/gpu-next/libplacebo] [ 39]     stage_output._13 = _13;
+[   0.186][d][vo/gpu-next/libplacebo] [ 40]     return stage_output;
+[   0.186][d][vo/gpu-next/libplacebo] [ 41] }
+[   0.188][d][vo/gpu-next/libplacebo] shaderc compile status 'success' (0 errors, 0 warnings)
+[   0.188][d][vo/gpu-next/libplacebo] Spent 2.083 ms translating GLSL to SPIR-V
+[   0.188][d][vo/gpu-next/libplacebo] Spent 0.170 ms translating SPIR-V to HLSL
+[   0.191][d][vo/gpu-next/libplacebo] Spent 2.367 ms translating HLSL to DXBC
+[   0.191][d][vo/gpu-next/libplacebo] fragment shader HLSL source:
+[   0.191][d][vo/gpu-next/libplacebo] [  1] cbuffer _69_71 : register(b2)
+[   0.191][d][vo/gpu-next/libplacebo] [  2] {
+[   0.191][d][vo/gpu-next/libplacebo] [  3]     row_major float3x3 _71_m0 : packoffset(c0);
+[   0.191][d][vo/gpu-next/libplacebo] [  4]     float3 _71_m1 : packoffset(c3);
+[   0.191][d][vo/gpu-next/libplacebo] [  5] };
+[   0.191][d][vo/gpu-next/libplacebo] [  6] 
+[   0.191][d][vo/gpu-next/libplacebo] [  7] Texture2D<float4> _22 : register(t0);
+[   0.191][d][vo/gpu-next/libplacebo] [  8] SamplerState __22_sampler : register(s0);
+[   0.191][d][vo/gpu-next/libplacebo] [  9] Texture2D<float4> _35 : register(t1);
+[   0.191][d][vo/gpu-next/libplacebo] [ 10] SamplerState __35_sampler : register(s1);
+[   0.191][d][vo/gpu-next/libplacebo] [ 11] 
+[   0.191][d][vo/gpu-next/libplacebo] [ 12] static float2 _26;
+[   0.191][d][vo/gpu-next/libplacebo] [ 13] static float2 _37;
+[   0.191][d][vo/gpu-next/libplacebo] [ 14] static float4 _121;
+[   0.191][d][vo/gpu-next/libplacebo] [ 15] 
+[   0.191][d][vo/gpu-next/libplacebo] [ 16] struct SPIRV_Cross_Input
+[   0.191][d][vo/gpu-next/libplacebo] [ 17] {
+[   0.191][d][vo/gpu-next/libplacebo] [ 18]     float2 _26 : TEXCOORD0;
+[   0.191][d][vo/gpu-next/libplacebo] [ 19]     float2 _37 : TEXCOORD1;
+[   0.191][d][vo/gpu-next/libplacebo] [ 20] };
+[   0.191][d][vo/gpu-next/libplacebo] [ 21] 
+[   0.191][d][vo/gpu-next/libplacebo] [ 22] struct SPIRV_Cross_Output
+[   0.191][d][vo/gpu-next/libplacebo] [ 23] {
+[   0.191][d][vo/gpu-next/libplacebo] [ 24]     float4 _121 : SV_Target0;
+[   0.191][d][vo/gpu-next/libplacebo] [ 25] };
+[   0.191][d][vo/gpu-next/libplacebo] [ 26] 
+[   0.191][d][vo/gpu-next/libplacebo] [ 27] void frag_main()
+[   0.191][d][vo/gpu-next/libplacebo] [ 28] {
+[   0.191][d][vo/gpu-next/libplacebo] [ 29]     float4 _195 = float4(0.062745101749897003173828125f, 0.501960813999176025390625f, 0.501960813999176025390625f, 1.0f);
+[   0.191][d][vo/gpu-next/libplacebo] [ 30]     _195.x = _22.SampleLevel(__22_sampler, _26, 0.0f).x;
+[   0.191][d][vo/gpu-next/libplacebo] [ 31]     float4 _190 = _35.SampleLevel(__35_sampler, _37, 0.0f);
+[   0.191][d][vo/gpu-next/libplacebo] [ 32]     _195.y = _190.x;
+[   0.191][d][vo/gpu-next/libplacebo] [ 33]     _195.z = _190.y;
+[   0.191][d][vo/gpu-next/libplacebo] [ 34]     float3 _148 = mul(_195.xyz, _71_m0) + _71_m1;
+[   0.191][d][vo/gpu-next/libplacebo] [ 35]     float4 _203 = _195;
+[   0.191][d][vo/gpu-next/libplacebo] [ 36]     _203.x = _148.x;
+[   0.191][d][vo/gpu-next/libplacebo] [ 37]     _203.y = _148.y;
+[   0.191][d][vo/gpu-next/libplacebo] [ 38]     _203.z = _148.z;
+[   0.191][d][vo/gpu-next/libplacebo] [ 39]     float4 _158 = round(_203 * 1023.0f) * 0.000977517105638980865478515625f;
+[   0.191][d][vo/gpu-next/libplacebo] [ 40]     _121 = float4(clamp(_158.x, 0.0f, 1.0f), clamp(_158.y, 0.0f, 1.0f), clamp(_158.z, 0.0f, 1.0f), clamp(_158.w, 0.0f, 1.0f));
+[   0.191][d][vo/gpu-next/libplacebo] [ 41] }
+[   0.191][d][vo/gpu-next/libplacebo] [ 42] 
+[   0.191][d][vo/gpu-next/libplacebo] [ 43] SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+[   0.191][d][vo/gpu-next/libplacebo] [ 44] {
+[   0.191][d][vo/gpu-next/libplacebo] [ 45]     _26 = stage_input._26;
+[   0.191][d][vo/gpu-next/libplacebo] [ 46]     _37 = stage_input._37;
+[   0.191][d][vo/gpu-next/libplacebo] [ 47]     frag_main();
+[   0.191][d][vo/gpu-next/libplacebo] [ 48]     SPIRV_Cross_Output stage_output;
+[   0.191][d][vo/gpu-next/libplacebo] [ 49]     stage_output._121 = _121;
+[   0.191][d][vo/gpu-next/libplacebo] [ 50]     return stage_output;
+[   0.191][d][vo/gpu-next/libplacebo] [ 51] }
+[   0.195][v][cplayer] first video frame after restart shown
+[   0.195][d][cplayer] starting video playback
+[   0.195][v][cplayer] playback restart complete @ 0.000000, audio=eof, video=playing
+[   0.195][d][vo/gpu-next/libplacebo] (Re)creating 2560x1600x0 texture with format rgba16hf: src/renderer.c:4159
+[   0.195][d][vo/gpu-next/libplacebo] vertex shader source:
+[   0.195][d][vo/gpu-next/libplacebo] [  1] #version 450
+[   0.195][d][vo/gpu-next/libplacebo] [  2] layout(std140, binding=2) uniform _9 {
+[   0.195][d][vo/gpu-next/libplacebo] [  3]     layout(offset=0) mat3 _6;
+[   0.195][d][vo/gpu-next/libplacebo] [  4]     layout(offset=48) vec3 _7;
+[   0.195][d][vo/gpu-next/libplacebo] [  5] };
+[   0.195][d][vo/gpu-next/libplacebo] [  6] layout(location=0) in vec2 _a;
+[   0.195][d][vo/gpu-next/libplacebo] [  7] layout(location=0) out vec2 _8003;
+[   0.195][d][vo/gpu-next/libplacebo] [  8] layout(location=1) in vec2 _b;
+[   0.195][d][vo/gpu-next/libplacebo] [  9] layout(location=1) out vec2 _4003;
+[   0.195][d][vo/gpu-next/libplacebo] [ 10] layout(location=2) in vec2 _c;
+[   0.195][d][vo/gpu-next/libplacebo] [ 11] void main() {
+[   0.195][d][vo/gpu-next/libplacebo] [ 12] _8003 = _a;
+[   0.195][d][vo/gpu-next/libplacebo] [ 13] _4003 = _b;
+[   0.195][d][vo/gpu-next/libplacebo] [ 14] vec2 va_pos = _c; 
+[   0.195][d][vo/gpu-next/libplacebo] [ 15] gl_Position = vec4(va_pos, 0.0, 1.0); 
+[   0.195][d][vo/gpu-next/libplacebo] [ 16] }
+[   0.195][d][vo/gpu-next/libplacebo] fragment shader source:
+[   0.195][d][vo/gpu-next/libplacebo] [  1] #version 450
+[   0.195][d][vo/gpu-next/libplacebo] [  2] #extension GL_ARB_uniform_buffer_object : enable
+[   0.195][d][vo/gpu-next/libplacebo] [  3] #extension GL_ARB_texture_gather : enable
+[   0.195][d][vo/gpu-next/libplacebo] [  4] #define PRECISE precise 
+[   0.195][d][vo/gpu-next/libplacebo] [  5] layout(binding=0) uniform  sampler2D _8002;
+[   0.195][d][vo/gpu-next/libplacebo] [  6] layout(binding=1) uniform  sampler2D _4002;
+[   0.195][d][vo/gpu-next/libplacebo] [  7] layout(std140, binding=2) uniform _9 {
+[   0.195][d][vo/gpu-next/libplacebo] [  8]     layout(offset=0) mat3 _6;
+[   0.195][d][vo/gpu-next/libplacebo] [  9]     layout(offset=48) vec3 _7;
+[   0.195][d][vo/gpu-next/libplacebo] [ 10] };
+[   0.195][d][vo/gpu-next/libplacebo] [ 11] layout(location=0) in vec2 _8003;
+[   0.195][d][vo/gpu-next/libplacebo] [ 12] layout(location=1) in vec2 _4003;
+[   0.195][d][vo/gpu-next/libplacebo] [ 13] layout(location=0) out vec4 out_color;
+[   0.195][d][vo/gpu-next/libplacebo] [ 14] 
+[   0.195][d][vo/gpu-next/libplacebo] [ 15] const float _2 = float(0.062745101749897); 
+[   0.195][d][vo/gpu-next/libplacebo] [ 16] const float _3 = float(0.501960813999176); 
+[   0.195][d][vo/gpu-next/libplacebo] [ 17] const float _8004 = float(1.0); 
+[   0.195][d][vo/gpu-next/libplacebo] [ 18] vec4 _8001() {
+[   0.195][d][vo/gpu-next/libplacebo] [ 19] // pl_shader_sample_direct                                  
+[   0.195][d][vo/gpu-next/libplacebo] [ 20] vec4 color = vec4(_8004) * vec4(textureLod(_8002, _8003, 0.0));   
+[   0.195][d][vo/gpu-next/libplacebo] [ 21] return color;
+[   0.195][d][vo/gpu-next/libplacebo] [ 22] }
+[   0.196][d][vo/gpu-next/libplacebo] [ 23] 
+[   0.196][d][vo/gpu-next/libplacebo] [ 24] const float _4 = float(1.0); 
+[   0.196][d][vo/gpu-next/libplacebo] [ 25] const float _4004 = float(1.0); 
+[   0.196][d][vo/gpu-next/libplacebo] [ 26] vec4 _4001() {
+[   0.196][d][vo/gpu-next/libplacebo] [ 27] // pl_shader_sample_direct                                  
+[   0.196][d][vo/gpu-next/libplacebo] [ 28] vec4 color = vec4(_4004) * vec4(textureLod(_4002, _4003, 0.0));   
+[   0.196][d][vo/gpu-next/libplacebo] [ 29] return color;
+[   0.196][d][vo/gpu-next/libplacebo] [ 30] }
+[   0.196][d][vo/gpu-next/libplacebo] [ 31] 
+[   0.196][d][vo/gpu-next/libplacebo] [ 32] const float _5 = float(1.0); 
+[   0.196][d][vo/gpu-next/libplacebo] [ 33] vec4 _1() {
+[   0.196][d][vo/gpu-next/libplacebo] [ 34] vec4 color = vec4(_2, vec2(_3), 1.0);   
+[   0.196][d][vo/gpu-next/libplacebo] [ 35] // pass_read_image                        
+[   0.196][d][vo/gpu-next/libplacebo] [ 36] {                                         
+[   0.196][d][vo/gpu-next/libplacebo] [ 37] vec4 tmp;                                 
+[   0.196][d][vo/gpu-next/libplacebo] [ 38] tmp = vec4(_4) * _8001(); 
+[   0.196][d][vo/gpu-next/libplacebo] [ 39] color[0] = tmp[0];
+[   0.196][d][vo/gpu-next/libplacebo] [ 40] tmp = vec4(_5) * _4001(); 
+[   0.196][d][vo/gpu-next/libplacebo] [ 41] color[1] = tmp[0];
+[   0.196][d][vo/gpu-next/libplacebo] [ 42] color[2] = tmp[1];
+[   0.196][d][vo/gpu-next/libplacebo] [ 43] }
+[   0.196][d][vo/gpu-next/libplacebo] [ 44] // pl_shader_decode_color 
+[   0.196][d][vo/gpu-next/libplacebo] [ 45] { 
+[   0.196][d][vo/gpu-next/libplacebo] [ 46] color.rgb = _6 * color.rgb + _7; 
+[   0.196][d][vo/gpu-next/libplacebo] [ 47] }
+[   0.196][d][vo/gpu-next/libplacebo] [ 48] return color;
+[   0.196][d][vo/gpu-next/libplacebo] [ 49] }
+[   0.196][d][vo/gpu-next/libplacebo] [ 50] 
+[   0.196][d][vo/gpu-next/libplacebo] [ 51] void main() {
+[   0.196][d][vo/gpu-next/libplacebo] [ 52] out_color = _1();
+[   0.196][d][vo/gpu-next/libplacebo] [ 53] }
+[   0.196][d][vo/gpu-next/libplacebo] shaderc compile status 'success' (0 errors, 0 warnings)
+[   0.196][d][vo/gpu-next/libplacebo] Spent 1.104 ms translating GLSL to SPIR-V
+[   0.196][d][vo/gpu-next/libplacebo] Spent 0.070 ms translating SPIR-V to HLSL
+[   0.197][d][vo/gpu-next/libplacebo] Spent 0.984 ms translating HLSL to DXBC
+[   0.197][d][vo/gpu-next/libplacebo] vertex shader HLSL source:
+[   0.197][d][vo/gpu-next/libplacebo] [  1] static float4 gl_Position;
+[   0.197][d][vo/gpu-next/libplacebo] [  2] static float2 _9;
+[   0.198][d][vo/gpu-next/libplacebo] [  3] static float2 _11;
+[   0.198][d][vo/gpu-next/libplacebo] [  4] static float2 _13;
+[   0.198][d][vo/gpu-next/libplacebo] [  5] static float2 _14;
+[   0.198][d][vo/gpu-next/libplacebo] [  6] static float2 _18;
+[   0.198][d][vo/gpu-next/libplacebo] [  7] 
+[   0.198][d][vo/gpu-next/libplacebo] [  8] struct SPIRV_Cross_Input
+[   0.198][d][vo/gpu-next/libplacebo] [  9] {
+[   0.198][d][vo/gpu-next/libplacebo] [ 10]     float2 _11 : TEXCOORD0;
+[   0.198][d][vo/gpu-next/libplacebo] [ 11]     float2 _14 : TEXCOORD1;
+[   0.198][d][vo/gpu-next/libplacebo] [ 12]     float2 _18 : TEXCOORD2;
+[   0.198][d][vo/gpu-next/libplacebo] [ 13] };
+[   0.198][d][vo/gpu-next/libplacebo] [ 14] 
+[   0.198][d][vo/gpu-next/libplacebo] [ 15] struct SPIRV_Cross_Output
+[   0.198][d][vo/gpu-next/libplacebo] [ 16] {
+[   0.198][d][vo/gpu-next/libplacebo] [ 17]     float2 _9 : TEXCOORD0;
+[   0.198][d][vo/gpu-next/libplacebo] [ 18]     float2 _13 : TEXCOORD1;
+[   0.198][d][vo/gpu-next/libplacebo] [ 19]     float4 gl_Position : SV_Position;
+[   0.198][d][vo/gpu-next/libplacebo] [ 20] };
+[   0.198][d][vo/gpu-next/libplacebo] [ 21] 
+[   0.198][d][vo/gpu-next/libplacebo] [ 22] void vert_main()
+[   0.198][d][vo/gpu-next/libplacebo] [ 23] {
+[   0.198][d][vo/gpu-next/libplacebo] [ 24]     _9 = _11;
+[   0.198][d][vo/gpu-next/libplacebo] [ 25]     _13 = _14;
+[   0.198][d][vo/gpu-next/libplacebo] [ 26]     gl_Position = float4(_18, 0.0f, 1.0f);
+[   0.198][d][vo/gpu-next/libplacebo] [ 27]     gl_Position.y = -gl_Position.y;
+[   0.198][d][vo/gpu-next/libplacebo] [ 28] }
+[   0.198][d][vo/gpu-next/libplacebo] [ 29] 
+[   0.198][d][vo/gpu-next/libplacebo] [ 30] SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+[   0.198][d][vo/gpu-next/libplacebo] [ 31] {
+[   0.198][d][vo/gpu-next/libplacebo] [ 32]     _11 = stage_input._11;
+[   0.198][d][vo/gpu-next/libplacebo] [ 33]     _14 = stage_input._14;
+[   0.198][d][vo/gpu-next/libplacebo] [ 34]     _18 = stage_input._18;
+[   0.198][d][vo/gpu-next/libplacebo] [ 35]     vert_main();
+[   0.198][d][vo/gpu-next/libplacebo] [ 36]     SPIRV_Cross_Output stage_output;
+[   0.198][d][vo/gpu-next/libplacebo] [ 37]     stage_output.gl_Position = gl_Position;
+[   0.198][d][vo/gpu-next/libplacebo] [ 38]     stage_output._9 = _9;
+[   0.198][d][vo/gpu-next/libplacebo] [ 39]     stage_output._13 = _13;
+[   0.198][d][vo/gpu-next/libplacebo] [ 40]     return stage_output;
+[   0.198][d][vo/gpu-next/libplacebo] [ 41] }
+[   0.199][d][vo/gpu-next/libplacebo] shaderc compile status 'success' (0 errors, 0 warnings)
+[   0.199][d][vo/gpu-next/libplacebo] Spent 1.601 ms translating GLSL to SPIR-V
+[   0.199][d][vo/gpu-next/libplacebo] Spent 0.118 ms translating SPIR-V to HLSL
+[   0.201][d][vo/gpu-next/libplacebo] Spent 1.873 ms translating HLSL to DXBC
+[   0.201][d][vo/gpu-next/libplacebo] fragment shader HLSL source:
+[   0.201][d][vo/gpu-next/libplacebo] [  1] cbuffer _69_71 : register(b2)
+[   0.201][d][vo/gpu-next/libplacebo] [  2] {
+[   0.201][d][vo/gpu-next/libplacebo] [  3]     row_major float3x3 _71_m0 : packoffset(c0);
+[   0.201][d][vo/gpu-next/libplacebo] [  4]     float3 _71_m1 : packoffset(c3);
+[   0.201][d][vo/gpu-next/libplacebo] [  5] };
+[   0.201][d][vo/gpu-next/libplacebo] [  6] 
+[   0.201][d][vo/gpu-next/libplacebo] [  7] Texture2D<float4> _22 : register(t0);
+[   0.201][d][vo/gpu-next/libplacebo] [  8] SamplerState __22_sampler : register(s0);
+[   0.201][d][vo/gpu-next/libplacebo] [  9] Texture2D<float4> _35 : register(t1);
+[   0.201][d][vo/gpu-next/libplacebo] [ 10] SamplerState __35_sampler : register(s1);
+[   0.201][d][vo/gpu-next/libplacebo] [ 11] 
+[   0.201][d][vo/gpu-next/libplacebo] [ 12] static float2 _26;
+[   0.201][d][vo/gpu-next/libplacebo] [ 13] static float2 _37;
+[   0.201][d][vo/gpu-next/libplacebo] [ 14] static float4 _95;
+[   0.201][d][vo/gpu-next/libplacebo] [ 15] 
+[   0.201][d][vo/gpu-next/libplacebo] [ 16] struct SPIRV_Cross_Input
+[   0.201][d][vo/gpu-next/libplacebo] [ 17] {
+[   0.201][d][vo/gpu-next/libplacebo] [ 18]     float2 _26 : TEXCOORD0;
+[   0.201][d][vo/gpu-next/libplacebo] [ 19]     float2 _37 : TEXCOORD1;
+[   0.201][d][vo/gpu-next/libplacebo] [ 20] };
+[   0.201][d][vo/gpu-next/libplacebo] [ 21] 
+[   0.201][d][vo/gpu-next/libplacebo] [ 22] struct SPIRV_Cross_Output
+[   0.201][d][vo/gpu-next/libplacebo] [ 23] {
+[   0.201][d][vo/gpu-next/libplacebo] [ 24]     float4 _95 : SV_Target0;
+[   0.201][d][vo/gpu-next/libplacebo] [ 25] };
+[   0.201][d][vo/gpu-next/libplacebo] [ 26] 
+[   0.201][d][vo/gpu-next/libplacebo] [ 27] void frag_main()
+[   0.201][d][vo/gpu-next/libplacebo] [ 28] {
+[   0.201][d][vo/gpu-next/libplacebo] [ 29]     float4 _147 = float4(0.062745101749897003173828125f, 0.501960813999176025390625f, 0.501960813999176025390625f, 1.0f);
+[   0.201][d][vo/gpu-next/libplacebo] [ 30]     _147.x = _22.SampleLevel(__22_sampler, _26, 0.0f).x;
+[   0.201][d][vo/gpu-next/libplacebo] [ 31]     float4 _142 = _35.SampleLevel(__35_sampler, _37, 0.0f);
+[   0.201][d][vo/gpu-next/libplacebo] [ 32]     _147.y = _142.x;
+[   0.201][d][vo/gpu-next/libplacebo] [ 33]     _147.z = _142.y;
+[   0.201][d][vo/gpu-next/libplacebo] [ 34]     float3 _121 = mul(_147.xyz, _71_m0) + _71_m1;
+[   0.201][d][vo/gpu-next/libplacebo] [ 35]     float4 _155 = _147;
+[   0.201][d][vo/gpu-next/libplacebo] [ 36]     _155.x = _121.x;
+[   0.201][d][vo/gpu-next/libplacebo] [ 37]     _155.y = _121.y;
+[   0.201][d][vo/gpu-next/libplacebo] [ 38]     _155.z = _121.z;
+[   0.201][d][vo/gpu-next/libplacebo] [ 39]     _95 = _155;
+[   0.201][d][vo/gpu-next/libplacebo] [ 40] }
+[   0.201][d][vo/gpu-next/libplacebo] [ 41] 
+[   0.201][d][vo/gpu-next/libplacebo] [ 42] SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+[   0.201][d][vo/gpu-next/libplacebo] [ 43] {
+[   0.201][d][vo/gpu-next/libplacebo] [ 44]     _26 = stage_input._26;
+[   0.201][d][vo/gpu-next/libplacebo] [ 45]     _37 = stage_input._37;
+[   0.201][d][vo/gpu-next/libplacebo] [ 46]     frag_main();
+[   0.201][d][vo/gpu-next/libplacebo] [ 47]     SPIRV_Cross_Output stage_output;
+[   0.201][d][vo/gpu-next/libplacebo] [ 48]     stage_output._95 = _95;
+[   0.201][d][vo/gpu-next/libplacebo] [ 49]     return stage_output;
+[   0.201][d][vo/gpu-next/libplacebo] [ 50] }
+[   0.201][d][vo/gpu-next/libplacebo] vertex shader source:
+[   0.201][d][vo/gpu-next/libplacebo] [  1] #version 450
+[   0.201][d][vo/gpu-next/libplacebo] [  2] layout(location=0) in vec2 _11;
+[   0.201][d][vo/gpu-next/libplacebo] [  3] layout(location=0) out vec2 _3;
+[   0.201][d][vo/gpu-next/libplacebo] [  4] layout(location=1) in vec2 _12;
+[   0.201][d][vo/gpu-next/libplacebo] [  5] void main() {
+[   0.201][d][vo/gpu-next/libplacebo] [  6] _3 = _11;
+[   0.201][d][vo/gpu-next/libplacebo] [  7] vec2 va_pos = _12; 
+[   0.201][d][vo/gpu-next/libplacebo] [  8] gl_Position = vec4(va_pos, 0.0, 1.0); 
+[   0.201][d][vo/gpu-next/libplacebo] [  9] }
+[   0.201][d][vo/gpu-next/libplacebo] fragment shader source:
+[   0.201][d][vo/gpu-next/libplacebo] [  1] #version 450
+[   0.201][d][vo/gpu-next/libplacebo] [  2] #extension GL_ARB_texture_gather : enable
+[   0.201][d][vo/gpu-next/libplacebo] [  3] #define PRECISE precise 
+[   0.201][d][vo/gpu-next/libplacebo] [  4] layout(binding=0) uniform  sampler2D _2;
+[   0.201][d][vo/gpu-next/libplacebo] [  5] layout(location=0) in vec2 _3;
+[   0.201][d][vo/gpu-next/libplacebo] [  6] layout(location=0) out vec4 out_color;
+[   0.201][d][vo/gpu-next/libplacebo] [  7] 
+[   0.201][d][vo/gpu-next/libplacebo] [  8] const float _4 = float(1023.0); 
+[   0.201][d][vo/gpu-next/libplacebo] [  9] const float _5 = float(0.0009775171056389809); 
+[   0.201][d][vo/gpu-next/libplacebo] [ 10] const float _7 = float(0.0); 
+[   0.201][d][vo/gpu-next/libplacebo] [ 11] const float _8 = float(1.0); 
+[   0.201][d][vo/gpu-next/libplacebo] [ 12] const float _9 = float(0.0); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 13] const float _a = float(1.0); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 14] const float _b = float(0.0); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 15] const float _c = float(1.0); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 16] const float _d = float(0.0); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 17] const float _e = float(1.0); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 18] vec4 _1() {
+[   0.202][d][vo/gpu-next/libplacebo] [ 19] vec4 color;                   
+[   0.202][d][vo/gpu-next/libplacebo] [ 20] // pl_render_image_mix        
+[   0.202][d][vo/gpu-next/libplacebo] [ 21] {                             
+[   0.202][d][vo/gpu-next/libplacebo] [ 22] color = textureLod(_2, _3, 0.0); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 23] } 
+[   0.202][d][vo/gpu-next/libplacebo] [ 24] // pl_shader_encode_color 
+[   0.202][d][vo/gpu-next/libplacebo] [ 25] { 
+[   0.202][d][vo/gpu-next/libplacebo] [ 26] }
+[   0.202][d][vo/gpu-next/libplacebo] [ 27] color.rgba = round(color.rgba * _4) * _5; 
+[   0.202][d][vo/gpu-next/libplacebo] [ 28] vec4 _6 = color;                 
+[   0.202][d][vo/gpu-next/libplacebo] [ 29] color = vec4(0.0, 0.0, 0.0, 1.0); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 30] color[0] = clamp(_6[0], _7, _8); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 31] color[1] = clamp(_6[1], _9, _a); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 32] color[2] = clamp(_6[2], _b, _c); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 33] color[3] = clamp(_6[3], _d, _e); 
+[   0.202][d][vo/gpu-next/libplacebo] [ 34] return color;
+[   0.202][d][vo/gpu-next/libplacebo] [ 35] }
+[   0.202][d][vo/gpu-next/libplacebo] [ 36] 
+[   0.202][d][vo/gpu-next/libplacebo] [ 37] void main() {
+[   0.202][d][vo/gpu-next/libplacebo] [ 38] out_color = _1();
+[   0.202][d][vo/gpu-next/libplacebo] [ 39] }
+[   0.202][d][vo/gpu-next/libplacebo] shaderc compile status 'success' (0 errors, 0 warnings)
+[   0.202][d][vo/gpu-next/libplacebo] Spent 0.970 ms translating GLSL to SPIR-V
+[   0.202][d][vo/gpu-next/libplacebo] Spent 0.052 ms translating SPIR-V to HLSL
+[   0.203][d][vo/gpu-next/libplacebo] Spent 0.861 ms translating HLSL to DXBC
+[   0.203][d][vo/gpu-next/libplacebo] vertex shader HLSL source:
+[   0.203][d][vo/gpu-next/libplacebo] [  1] static float4 gl_Position;
+[   0.203][d][vo/gpu-next/libplacebo] [  2] static float2 _9;
+[   0.203][d][vo/gpu-next/libplacebo] [  3] static float2 _11;
+[   0.203][d][vo/gpu-next/libplacebo] [  4] static float2 _15;
+[   0.203][d][vo/gpu-next/libplacebo] [  5] 
+[   0.203][d][vo/gpu-next/libplacebo] [  6] struct SPIRV_Cross_Input
+[   0.203][d][vo/gpu-next/libplacebo] [  7] {
+[   0.203][d][vo/gpu-next/libplacebo] [  8]     float2 _11 : TEXCOORD0;
+[   0.203][d][vo/gpu-next/libplacebo] [  9]     float2 _15 : TEXCOORD1;
+[   0.203][d][vo/gpu-next/libplacebo] [ 10] };
+[   0.203][d][vo/gpu-next/libplacebo] [ 11] 
+[   0.203][d][vo/gpu-next/libplacebo] [ 12] struct SPIRV_Cross_Output
+[   0.203][d][vo/gpu-next/libplacebo] [ 13] {
+[   0.203][d][vo/gpu-next/libplacebo] [ 14]     float2 _9 : TEXCOORD0;
+[   0.203][d][vo/gpu-next/libplacebo] [ 15]     float4 gl_Position : SV_Position;
+[   0.203][d][vo/gpu-next/libplacebo] [ 16] };
+[   0.203][d][vo/gpu-next/libplacebo] [ 17] 
+[   0.203][d][vo/gpu-next/libplacebo] [ 18] void vert_main()
+[   0.203][d][vo/gpu-next/libplacebo] [ 19] {
+[   0.203][d][vo/gpu-next/libplacebo] [ 20]     _9 = _11;
+[   0.203][d][vo/gpu-next/libplacebo] [ 21]     gl_Position = float4(_15, 0.0f, 1.0f);
+[   0.203][d][vo/gpu-next/libplacebo] [ 22]     gl_Position.y = -gl_Position.y;
+[   0.203][d][vo/gpu-next/libplacebo] [ 23] }
+[   0.203][d][vo/gpu-next/libplacebo] [ 24] 
+[   0.203][d][vo/gpu-next/libplacebo] [ 25] SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+[   0.203][d][vo/gpu-next/libplacebo] [ 26] {
+[   0.203][d][vo/gpu-next/libplacebo] [ 27]     _11 = stage_input._11;
+[   0.203][d][vo/gpu-next/libplacebo] [ 28]     _15 = stage_input._15;
+[   0.203][d][vo/gpu-next/libplacebo] [ 29]     vert_main();
+[   0.203][d][vo/gpu-next/libplacebo] [ 30]     SPIRV_Cross_Output stage_output;
+[   0.203][d][vo/gpu-next/libplacebo] [ 31]     stage_output.gl_Position = gl_Position;
+[   0.203][d][vo/gpu-next/libplacebo] [ 32]     stage_output._9 = _9;
+[   0.203][d][vo/gpu-next/libplacebo] [ 33]     return stage_output;
+[   0.203][d][vo/gpu-next/libplacebo] [ 34] }
+[   0.205][d][vo/gpu-next/libplacebo] shaderc compile status 'success' (0 errors, 0 warnings)
+[   0.205][d][vo/gpu-next/libplacebo] Spent 1.387 ms translating GLSL to SPIR-V
+[   0.205][d][vo/gpu-next/libplacebo] Spent 0.098 ms translating SPIR-V to HLSL
+[   0.206][d][vo/gpu-next/libplacebo] Spent 1.389 ms translating HLSL to DXBC
+[   0.206][d][vo/gpu-next/libplacebo] fragment shader HLSL source:
+[   0.206][d][vo/gpu-next/libplacebo] [  1] Texture2D<float4> _16 : register(t0);
+[   0.206][d][vo/gpu-next/libplacebo] [  2] SamplerState __16_sampler : register(s0);
+[   0.206][d][vo/gpu-next/libplacebo] [  3] 
+[   0.206][d][vo/gpu-next/libplacebo] [  4] static float2 _20;
+[   0.206][d][vo/gpu-next/libplacebo] [  5] static float4 _60;
+[   0.206][d][vo/gpu-next/libplacebo] [  6] 
+[   0.206][d][vo/gpu-next/libplacebo] [  7] struct SPIRV_Cross_Input
+[   0.206][d][vo/gpu-next/libplacebo] [  8] {
+[   0.206][d][vo/gpu-next/libplacebo] [  9]     float2 _20 : TEXCOORD0;
+[   0.206][d][vo/gpu-next/libplacebo] [ 10] };
+[   0.206][d][vo/gpu-next/libplacebo] [ 11] 
+[   0.206][d][vo/gpu-next/libplacebo] [ 12] struct SPIRV_Cross_Output
+[   0.206][d][vo/gpu-next/libplacebo] [ 13] {
+[   0.206][d][vo/gpu-next/libplacebo] [ 14]     float4 _60 : SV_Target0;
+[   0.206][d][vo/gpu-next/libplacebo] [ 15] };
+[   0.206][d][vo/gpu-next/libplacebo] [ 16] 
+[   0.206][d][vo/gpu-next/libplacebo] [ 17] void frag_main()
+[   0.206][d][vo/gpu-next/libplacebo] [ 18] {
+[   0.206][d][vo/gpu-next/libplacebo] [ 19]     float4 _72 = round(_16.SampleLevel(__16_sampler, _20, 0.0f) * 1023.0f) * 0.000977517105638980865478515625f;
+[   0.206][d][vo/gpu-next/libplacebo] [ 20]     _60 = float4(clamp(_72.x, 0.0f, 1.0f), clamp(_72.y, 0.0f, 1.0f), clamp(_72.z, 0.0f, 1.0f), clamp(_72.w, 0.0f, 1.0f));
+[   0.206][d][vo/gpu-next/libplacebo] [ 21] }
+[   0.206][d][vo/gpu-next/libplacebo] [ 22] 
+[   0.206][d][vo/gpu-next/libplacebo] [ 23] SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+[   0.206][d][vo/gpu-next/libplacebo] [ 24] {
+[   0.206][d][vo/gpu-next/libplacebo] [ 25]     _20 = stage_input._20;
+[   0.206][d][vo/gpu-next/libplacebo] [ 26]     frag_main();
+[   0.206][d][vo/gpu-next/libplacebo] [ 27]     SPIRV_Cross_Output stage_output;
+[   0.206][d][vo/gpu-next/libplacebo] [ 28]     stage_output._60 = _60;
+[   0.206][d][vo/gpu-next/libplacebo] [ 29]     return stage_output;
+[   0.206][d][vo/gpu-next/libplacebo] [ 30] }
+[   0.207][v][cplayer] Video sync mode enabled.
+[   0.207][v][vo/gpu-next/libplacebo] Detected fps ratio 0.0000 below threshold 0.0100, disabling interpolation
+[   0.207][d][vo/gpu-next/libplacebo] (Re)creating 2560x1600x0 texture with format rgba16hf: src/renderer.c:4159
+[   0.252][v][vo/gpu-next/libplacebo] Estimated source FPS: 60.000, display FPS: 60.000
+[  10.235][v][vf] filter input EOF
+[  10.235][v][vf] filter output EOF
+[  10.241][d][vo/gpu-next] Render queue underrun.
+[  10.249][v][cplayer] using demuxer frame duration for last frame
+[  10.249][d][cplayer] video EOF (status=3)
+[  10.249][d][vo/gpu-next] Render queue underrun.
+[  10.284][d][cplayer] video EOF (status=3)
+[  10.284][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.285][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][d][cplayer] video EOF (status=3)
+[  10.304][v][cplayer] video EOF reached
+[  10.304][d][cplayer] video EOF (status=4)
+[  10.304][v][lavf] queuing seek to 0.000000
+[  10.304][v][lavf] cached range 0: 0.000000 <-> 9.983333 (bof=1, eof=1)
+[  10.304][v][lavf] ...using this range for in-cache seek.
+[  10.304][v][lavf] seeking stream 0 (video) to packet 0.000000/-0.033333
+[  10.304][v][cplayer] hr-seek, skipping to 0.000000
+[  10.304][v][lavf] EOF reached.
+[  10.305][d][ffmpeg/video] h264: Reinit context to 1920x1088, pix_fmt: d3d11
+[  10.308][v][vd] Decoder format: 1920x1080 d3d11[nv12] auto/auto/auto/auto/auto CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[  10.309][v][vd] Using container aspect ratio.
+[  10.310][v][cplayer] first video frame after restart shown
+[  10.310][d][cplayer] starting video playback
+[  10.310][v][cplayer] playback restart complete @ 0.000000, audio=eof, video=playing
+[  10.310][v][vo/gpu-next/libplacebo] Detected fps ratio 0.0000 below threshold 0.0100, disabling interpolation
+[  10.310][d][vo/gpu-next/libplacebo] (Re)creating 2560x1600x0 texture with format rgba16hf: src/renderer.c:4159
+[  10.358][v][vo/gpu-next/libplacebo] Estimated source FPS: 60.000, display FPS: 60.000
+[  20.317][v][vf] filter input EOF
+[  20.317][v][vf] filter output EOF
+[  20.322][d][vo/gpu-next] Render queue underrun.
+[  20.330][v][cplayer] using demuxer frame duration for last frame
+[  20.330][d][cplayer] video EOF (status=3)
+[  20.330][d][vo/gpu-next] Render queue underrun.
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.367][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][d][cplayer] video EOF (status=3)
+[  20.383][v][cplayer] video EOF reached
+[  20.383][d][cplayer] video EOF (status=4)
+[  20.383][v][lavf] queuing seek to 0.000000
+[  20.383][v][lavf] cached range 0: 0.000000 <-> 9.983333 (bof=1, eof=1)
+[  20.383][v][lavf] ...using this range for in-cache seek.
+[  20.383][v][lavf] seeking stream 0 (video) to packet 0.000000/-0.033333
+[  20.383][v][cplayer] hr-seek, skipping to 0.000000
+[  20.383][v][lavf] EOF reached.
+[  20.383][d][ffmpeg/video] h264: Reinit context to 1920x1088, pix_fmt: d3d11
+[  20.387][v][vd] Decoder format: 1920x1080 d3d11[nv12] auto/auto/auto/auto/auto CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[  20.387][v][vd] Using container aspect ratio.
+[  20.388][v][cplayer] first video frame after restart shown
+[  20.388][d][cplayer] starting video playback
+[  20.388][v][cplayer] playback restart complete @ 0.000000, audio=eof, video=playing
+[  20.388][v][vo/gpu-next/libplacebo] Detected fps ratio 0.0000 below threshold 0.0100, disabling interpolation
+[  20.388][d][vo/gpu-next/libplacebo] (Re)creating 2560x1600x0 texture with format rgba16hf: src/renderer.c:4159
+[  20.438][v][vo/gpu-next/libplacebo] Estimated source FPS: 60.000, display FPS: 60.000
+[  30.396][v][vf] filter input EOF
+[  30.396][v][vf] filter output EOF
+[  30.403][d][vo/gpu-next] Render queue underrun.
+[  30.411][v][cplayer] using demuxer frame duration for last frame
+[  30.411][d][cplayer] video EOF (status=3)
+[  30.411][d][vo/gpu-next] Render queue underrun.
+[  30.446][d][cplayer] video EOF (status=3)
+[  30.467][d][cplayer] video EOF (status=3)
+[  30.467][d][cplayer] video EOF (status=3)
+[  30.467][d][cplayer] video EOF (status=3)
+[  30.467][d][cplayer] video EOF (status=3)
+[  30.467][d][cplayer] video EOF (status=3)
+[  30.467][d][cplayer] video EOF (status=3)
+[  30.467][d][cplayer] video EOF (status=3)
+[  30.467][d][cplayer] video EOF (status=3)
+[  30.467][d][cplayer] video EOF (status=3)
+[  30.467][v][cplayer] video EOF reached
+[  30.467][d][cplayer] video EOF (status=4)
+[  30.467][v][lavf] queuing seek to 0.000000
+[  30.467][v][lavf] cached range 0: 0.000000 <-> 9.983333 (bof=1, eof=1)
+[  30.467][v][lavf] ...using this range for in-cache seek.
+[  30.467][v][lavf] seeking stream 0 (video) to packet 0.000000/-0.033333
+[  30.467][v][cplayer] hr-seek, skipping to 0.000000
+[  30.467][v][lavf] EOF reached.
+[  30.467][d][ffmpeg/video] h264: Reinit context to 1920x1088, pix_fmt: d3d11
+[  30.471][v][vd] Decoder format: 1920x1080 d3d11[nv12] auto/auto/auto/auto/auto CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[  30.471][v][vd] Using container aspect ratio.
+[  30.472][v][cplayer] first video frame after restart shown
+[  30.472][d][cplayer] starting video playback
+[  30.472][v][cplayer] playback restart complete @ 0.000000, audio=eof, video=playing
+[  30.473][v][vo/gpu-next/libplacebo] Detected fps ratio 0.0000 below threshold 0.0100, disabling interpolation
+[  30.473][d][vo/gpu-next/libplacebo] (Re)creating 2560x1600x0 texture with format rgba16hf: src/renderer.c:4159
+[  30.519][v][vo/gpu-next/libplacebo] Estimated source FPS: 60.000, display FPS: 60.000
+[  40.878][v][vf] filter input EOF
+[  40.878][v][vf] filter output EOF
+[  40.884][d][vo/gpu-next] Render queue underrun.
+[  40.892][v][cplayer] using demuxer frame duration for last frame
+[  40.892][d][cplayer] video EOF (status=3)
+[  40.892][d][vo/gpu-next] Render queue underrun.
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.927][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.928][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.945][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][d][cplayer] video EOF (status=3)
+[  40.946][v][cplayer] video EOF reached
+[  40.946][d][cplayer] video EOF (status=4)
+[  40.946][v][lavf] queuing seek to 0.000000
+[  40.946][v][lavf] cached range 0: 0.000000 <-> 9.983333 (bof=1, eof=1)
+[  40.946][v][lavf] ...using this range for in-cache seek.
+[  40.946][v][lavf] seeking stream 0 (video) to packet 0.000000/-0.033333
+[  40.946][v][cplayer] hr-seek, skipping to 0.000000
+[  40.946][v][lavf] EOF reached.
+[  40.946][d][ffmpeg/video] h264: Reinit context to 1920x1088, pix_fmt: d3d11
+[  40.951][v][vd] Decoder format: 1920x1080 d3d11[nv12] auto/auto/auto/auto/auto CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[  40.951][v][vd] Using container aspect ratio.
+[  40.952][v][cplayer] first video frame after restart shown
+[  40.952][d][cplayer] starting video playback
+[  40.952][v][cplayer] playback restart complete @ 0.000000, audio=eof, video=playing
+[  40.952][v][vo/gpu-next/libplacebo] Detected fps ratio 0.0000 below threshold 0.0100, disabling interpolation
+[  40.952][d][vo/gpu-next/libplacebo] (Re)creating 2560x1600x0 texture with format rgba16hf: src/renderer.c:4159
+[  41.000][v][vo/gpu-next/libplacebo] Estimated source FPS: 60.000, display FPS: 60.000
+[  50.924][v][vf] filter input EOF
+[  50.924][v][vf] filter output EOF
+[  50.931][d][vo/gpu-next] Render queue underrun.
+[  50.939][v][cplayer] using demuxer frame duration for last frame
+[  50.939][d][cplayer] video EOF (status=3)
+[  50.939][d][vo/gpu-next] Render queue underrun.
+[  50.975][d][cplayer] video EOF (status=3)
+[  50.996][v][cplayer] video EOF reached
+[  50.996][d][cplayer] video EOF (status=4)
+[  50.996][v][lavf] queuing seek to 0.000000
+[  50.996][v][lavf] cached range 0: 0.000000 <-> 9.983333 (bof=1, eof=1)
+[  50.996][v][lavf] ...using this range for in-cache seek.
+[  50.996][v][lavf] seeking stream 0 (video) to packet 0.000000/-0.033333
+[  50.996][v][cplayer] hr-seek, skipping to 0.000000
+[  50.996][v][lavf] EOF reached.
+[  50.996][d][ffmpeg/video] h264: Reinit context to 1920x1088, pix_fmt: d3d11
+[  51.000][v][vd] Decoder format: 1920x1080 d3d11[nv12] auto/auto/auto/auto/auto CL=mpeg2/4/h264 crop=1920x1080+0+0 A=none
+[  51.000][v][vd] Using container aspect ratio.
+[  51.001][v][cplayer] first video frame after restart shown
+[  51.001][d][cplayer] starting video playback
+[  51.001][v][cplayer] playback restart complete @ 0.000000, audio=eof, video=playing
+[  51.001][v][vo/gpu-next/libplacebo] Detected fps ratio 0.0000 below threshold 0.0100, disabling interpolation
+[  51.001][d][vo/gpu-next/libplacebo] (Re)creating 2560x1600x0 texture with format rgba16hf: src/renderer.c:4159
+[  51.048][v][vo/gpu-next/libplacebo] Estimated source FPS: 60.000, display FPS: 60.000

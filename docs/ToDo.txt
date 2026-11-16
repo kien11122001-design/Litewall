@@ -1,0 +1,45 @@
+M5 step 1 passed, and I've found and fixed a real problem in "Reload config" that your testing exposed. Step 2 is written but not built or run.
+
+## Your test results
+
+- **Items 1–4:** all good. Item 4 I read as the tray icon and wallpapers coming back with your settings after `restartExplorer.bat`, the same as after a quit and start. Your saved `config.toml` shows the portrait screen with its own video and Fit, so persistence works. If you meant something else by item 4, tell me.
+- **Item 5:** the check was that the tray menu runs its own message loop while it's open. The point was that videos and display changes must keep working underneath, and you confirmed they do.
+- **Reload bug:** "Reload config" re-applied the defaults, which wiped your settings when the file was missing or had an error. It's now non-destructive. A bad `config.toml` keeps what's running and shows a notification, and the menu item is labelled "Reload config from file". Menu choices are saved immediately, so reload only matters after you edit the file by hand. I'd skip a confirmation dialog because nothing can be lost now.
+- **Odd number in your config:** `coverage_threshold = 0.8999999761581421` was a float-precision artefact. It's now stored as 0.9.
+
+## Your five points
+
+1. **Taskbar flicker at launch:** I can't tell from the logs whether it's Windows or LiteWall. LiteWall plausibly contributes: it pokes Explorer to build the wallpaper layer, parents the windows into it, and starts three GPU players at once. A quick A/B test: run `Start-Process $exe -ArgumentList '--test-pattern'` (no mpv, primary only), then try with just one screen enabled, then all three. Compare how much the taskbar flickers. The likely fixes are showing each window only after its first frame, and starting the players one at a time. Both are in the plan.
+2. **Delay and fade-in at startup:** yes, there will be a gap while Windows loads. Startup now waits up to 60 seconds for Explorer instead of exiting. A fade from black is cheap, but it fades from black, not from your old wallpaper. A real crossfade from the static wallpaper needs a much bigger rendering change, so that's later. The first thing to do is avoid the black flash by showing a window only after its first frame.
+3. **Stopping a covered monitor's video, per monitor:** that's M6, already planned. Covering one monitor pauses only that monitor, and the logic for it is written. A paused monitor costs about nothing. Freeing a long-covered monitor's memory entirely is a possible later extra.
+4. **Still images:** done in step 2. The file picker now lists videos (mp4, mkv, webm, mov, m4v, avi), GIF/WebP, and images (jpg, png, bmp, tiff, avif, jxl). Images stay up as long as the wallpaper is set. Note `.webm` is a video and `.webp` is the image/animation format.
+5. **Detaching a monitor with one click:** ticking "Enabled" off for a screen already removes its window, player and decode cost, so the load on the third monitor can go to zero today. Detaching it from Windows itself is a different, riskier feature that rearranges your display layout. It's in the plan as experimental and optional.
+
+## Step 2 contents
+
+- **File dialog:** both "Choose a video…" menu items now open a real Windows file dialog on its own thread, so nothing blocks. I used the classic `GetOpenFileNameW`, which looks like the standard Explorer-style window, instead of the heavier `IFileOpenDialog` I had planned. The plan notes this change.
+- **Start with Windows:** it now writes the Run entry in the registry, and the entry is synced with your config at every start.
+- **Notifications:** config-reload errors and very large GIF/WebP files now show a rate-limited tray notification.
+- **Image support, wait-for-Explorer and the threshold fix** are in as described above.
+
+Install and build:
+
+```powershell
+cd C:\dev\litewall
+$exe = ".\target\release\litewall.exe"; $log = "$env:LOCALAPPDATA\LiteWall\logs\litewall.log"
+& $exe --quit; Start-Sleep 2
+Expand-Archive -Force -Path "$env:USERPROFILE\Downloads\litewall-m5-step2.zip" -DestinationPath .
+Get-ChildItem .\src -Recurse -Filter *.rs | ForEach-Object { $_.LastWriteTime = Get-Date }
+cargo fmt; cargo test --lib; cargo clippy --all-targets -- -D warnings; cargo build --release
+Start-Process $exe
+```
+
+You should see 79 tests pass. Then check:
+
+1. **Pick a file:** from the tray, choose a video for all screens, then a video for one screen. Also try a `.jpg` or `.png` on a screen.
+2. **Zoom on an image:** switch zoom modes on that screen.
+3. **Reload safety:** break `config.toml` on purpose (delete a bracket) and choose "Reload config from file". Your wallpapers should keep playing and a warning should appear. Fix the file and reload again.
+4. **Start with Windows:** tick it and run `reg query HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LiteWall`. It should show your quoted exe path. Untick it and the entry should disappear.
+5. **Real startup:** if you're willing, sign out and back in with it ticked, and tell me how long the wallpapers take to appear and whether the taskbar flickers.
+
+If the build fails, paste the first error. If it works, I'll cover the remaining M5 items next (more notifications, handling a missing file at startup), and then M6, the pause engine, which is where your per-monitor performance idea lives.

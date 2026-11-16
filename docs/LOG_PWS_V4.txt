@@ -1,0 +1,233 @@
+PS C:\dev\litewall> cargo fmt
+PS C:\dev\litewall> cargo fmt; cargo clippy --all-targets -- -D warnings
+>> $v = "$PWD\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4"
+>> .\target\release\litewall.exe --play $v --mode fit
+>> Start-Sleep 5
+>> Get-Content "$env:LOCALAPPDATA\LiteWall\logs\litewall.log" -Tail 60 | Select-String "mpv|file loaded|playback|rejected|zoom|hiding|error|WARN"
+    Checking litewall v0.1.0 (C:\dev\litewall)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.58s
+   Compiling litewall v0.1.0 (C:\dev\litewall)
+    Finished `release` profile [optimized] target(s) in 4.16s
+
+2026-11-10 07:01:57.320 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Fill
+2026-11-10 07:01:57.322 INFO  mpv player created (client API 2.6, wid=0x120CA8)
+2026-11-10 07:01:57.323 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:01:57.324 DEBUG mpv: start-file
+2026-11-10 07:01:57.427 INFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:01:57.533 INFO  mpv property hwdec-current = d3d11va
+2026-11-10 07:06:31.562 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Fit
+2026-11-10 07:06:31.564 INFO  mpv player created (client API 2.6, wid=0x2F06EE)
+2026-11-10 07:06:31.564 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:06:31.566 DEBUG mpv: start-file
+2026-11-10 07:06:31.660 INFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+PS C:\dev\litewall> .\target\release\litewall.exe --quit
+PS C:\dev\litewall>  $v = "$PWD\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4"
+>> : The term '>>' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if
+a path was included, verify that the path is correct and try again.
+At line:2 char:1
++ >> .\target\release\litewall.exe --play $v --mode fill
++ ~~
+    + CategoryInfo          : ObjectNotFound: (>>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\dev\litewall> cargo fmt; cargo clippy --all-targets -- -D warnings
+>> cargo build --relcargo fmt; cargo clippy --all-targets -- -D warnings
+>> cargo build --r>
+                        ease\Big_Buck_Bunny_1080_10s_5MB.mp4"
+
+                                                     all.log" -Tail 60 | Select-String "mpv|file loaded|playback|rejected|zoom|hiding|error|WARNl                $env:LOCALAPPDATA\LiteWall\logs\litewall^Cog" -Tail 60 | Select-String "mpv|file loaded|playback|rejected|zoom|hiding|error|WARNl
+PS C:\dev\litewall> cargo fmt; cargo clippy --all-targets -- -D warnings
+>> cargo build --release
+>> $v = "$PWD\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4"
+>> .\target\release\litewall.exe --play $v --mode fill
+>> Start-Sleep 5
+>> Get-Content "$env:LOCALAPPDATA\LiteWall\logs\litewall.log" -Tail 60 | Select-String "mpv|file loaded|playback|rejected|zoom|hiding|error|WARN"
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
+    Finished `release` profile [optimized] target(s) in 0.09s
+
+2026-11-10 07:06:31.562 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Fit
+2026-11-10 07:06:31.564 INFO  mpv player created (client API 2.6, wid=0x2F06EE)
+2026-11-10 07:06:31.564 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:06:31.566 DEBUG mpv: start-file
+2026-11-10 07:06:31.660 INFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:06:31.774 INFO  mpv property hwdec-current = d3d11va
+2026-11-10 07:10:51.142 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Fill
+2026-11-10 07:10:51.145 INFO  mpv player created (client API 2.6, wid=0x3602AC)
+2026-11-10 07:10:51.145 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:10:51.146 DEBUG mpv: start-file
+2026-11-10 07:10:51.229 INFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:10:51.330 INFO  mpv property hwdec-current = d3d11va
+
+
+PS C:\dev\litewall> .\target\release\litewall.exe --quit
+PS C:\dev\litewall> cargo fmt; cargo clippy --all-targets -- -D warnings
+>> cargo build --release
+>> $v = "$PWD\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4"
+>> .\target\release\litewall.exe --play $v --mode stretch
+>> Start-Sleep 5
+>> Get-Content "$env:LOCALAPPDATA\LiteWall\logs\litewall.log" -Tail 60 | Select-String "mpv|file loaded|playback|rejected|zoom|hiding|error|WARN"
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
+    Finished `release` profile [optimized] target(s) in 0.08s
+
+2026-11-10 07:10:51.142 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Fill
+2026-11-10 07:10:51.145 INFO  mpv player created (client API 2.6, wid=0x3602AC)
+2026-11-10 07:10:51.145 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:10:51.146 DEBUG mpv: start-file
+2026-11-10 07:10:51.229 INFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:10:51.330 INFO  mpv property hwdec-current = d3d11va
+2026-11-10 07:11:38.719 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Stretch
+2026-11-10 07:11:38.722 INFO  mpv player created (client API 2.6, wid=0x4605A2)
+2026-11-10 07:11:38.722 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:11:38.cargo fmt; cargo clippy --all-targets -- -D warnings
+>> cargo build --releaseINFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4
+>> $v = "$PWD\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4"
+>> .\target\release\litewall.exe --play $v --mode stretch= d3d11va
+>> Start-Sleep 5
+>> Get-Content "$env:LOCALAPPDATA\LiteWall\logs\litewall.log" -Tail 60 | Select-String "mpv|file loaded|playback|rejected|zoom|hiding|error|WARN"^C
+PS C:\dev\litewall> .\target\release\litewall.exe --quit
+PS C:\dev\litewall> cargo fmt; cargo clippy --all-targets -- -D warnings
+>> cargo build --release
+>> $v = "$PWD\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4"
+>> .\target\release\litewall.exe --play $v --mode fit
+>> Start-Sleep 5
+>> Get-Content "$env:LOCALAPPDATA\LiteWall\logs\litewall.log" -Tail 60 | Select-String "mpv|file loaded|playback|rejected|zoom|hiding|error|WARN"
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
+    Finished `release` profile [optimized] target(s) in 0.08s
+
+2026-11-10 07:11:38.719 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0,
+right: 2560, bottom: 1600 } file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4
+zoom=Stretch
+2026-11-10 07:11:38.722 INFO  mpv player created (client API 2.6, wid=0x4605A2)
+2026-11-10 07:11:38.722 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:11:38.723 DEBUG mpv: start-file
+2026-11-10 07:11:38.804 INFO  file loaded:
+C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:11:38.904 INFO  mpv property hwdec-current = d3d11va
+2026-11-10 07:12:43.332 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0,
+right: 2560, bottom: 1600 } file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Fit
+2026-11-10 07:12:43.334 INFO  mpv player created (client API 2.6, wid=0x310740)
+2026-11-10 07:12:43.334 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:12:43.336 DEBUG mpv: start-file
+2026-11-10 07:12:43.418 INFO  file loaded:
+C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:12:43.518 INFO  mpv property hwdec-current = d3d11va
+
+
+PS C:\dev\litewall> .\target\release\litewall.exe --quit
+PS C:\dev\litewall> cargo fmt; cargo clippy --all-targets -- -D warnings
+>> cargo build --release
+>> $v = "$PWD\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4"
+>> .\target\release\litewall.exe --play $v --mode stretch
+>> Start-Sleep 5
+>> Get-Content "$env:LOCALAPPDATA\LiteWall\logs\litewall.log" -Tail 60 | Select-String "mpv|file loaded|playback|rejected|zoom|hiding|error|WARN"
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
+    Finished `release` profile [optimized] target(s) in 0.08s
+
+2026-11-10 07:12:43.332 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0,
+right: 2560, bottom: 1600 } file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Fit
+2026-11-10 07:12:43.334 INFO  mpv player created (client API 2.6, wid=0x310740)
+2026-11-10 07:12:43.334 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:12:43.336 DEBUG mpv: start-file
+2026-11-10 07:12:43.418 INFO  file loaded:
+C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:12:43.518 INFO  mpv property hwdec-current = d3d11va
+2026-11-10 07:12:56.958 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0,
+right: 2560, bottom: 1600 } file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4
+zoom=Stretch
+2026-11-10 07:12:56.960 INFO  mpv player created (client API 2.6, wid=0x4805A2)
+2026-11-10 07:12:56.960 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:12:56.962 DEBUG mpv: start-file
+2026-11-10 07:12:57.044 INFO  file loaded:
+C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:12:57.145 INFO  mpv property hwdec-current = d3d11va
+
+
+PS C:\dev\litewall> .\target\release\litewall.exe --quit
+PS C:\dev\litewall> cargo fmt; cargo clippy --all-targets -- -D warnings
+>> cargo build --release
+>> $v = "$PWD\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4"
+>> .\target\release\litewall.exe --play $v --mode original
+>> Start-Sleep 5
+>> Get-Content "$env:LOCALAPPDATA\LiteWall\logs\litewall.log" -Tail 60 | Select-String "mpv|file loaded|playback|rejected|zoom|hiding|error|WARN"
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
+    Finished `release` profile [optimized] target(s) in 0.08s
+
+2026-11-10 07:12:56.958 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Stretch
+2026-11-10 07:12:56.960 INFO  mpv player created (client API 2.6, wid=0x4805A2)
+2026-11-10 07:12:56.960 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:12:56.962 DEBUG mpv: start-file
+2026-11-10 07:12:57.044 INFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:12:57.145 INFO  mpv property hwdec-current = d3d11va
+2026-11-10 07:13:41.098 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Original
+2026-11-10 07:13:41.100 INFO  mpv player created (client API 2.6, wid=0x19064A)
+2026-11-10 07:13:41.100 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:13:41.102 DEBUG mpv: start-file
+2026-11-10 07:13:41.186 INFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:13:41.286 INFO  mpv property hwdec-current = d3d11va
+
+
+PS C:\dev\litewall> .\target\release\litewall.exe --quit
+PS C:\dev\litewall> cargo fmt; cargo clippy --all-targets -- -D warnings
+>> cargo build --release
+>> $v = "$PWD\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4"
+>> .\target\release\litewall.exe --play $v --mode custom:0.3,0.1,0
+>> Start-Sleep 5
+>> Get-Content "$env:LOCALAPPDATA\LiteWall\logs\litewall.log" -Tail 60 | Select-String "mpv|file loaded|playback|rejected|zoom|hiding|error|WARN"
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
+    Finished `release` profile [optimized] target(s) in 0.08s
+
+2026-11-10 07:13:41.098 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Original
+2026-11-10 07:13:41.100 INFO  mpv player created (client API 2.6, wid=0x19064A)
+2026-11-10 07:13:41.100 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:13:41.102 DEBUG mpv: start-file
+2026-11-10 07:13:41.186 INFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:13:41.286 INFO  mpv property hwdec-current = d3d11va
+2026-11-10 07:14:25.935 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Custom { zoom_log2: 0.3, pan_x: 0.1, pan_y: 0.0, align_x:
+0.0, align_y: 0.0 }
+2026-11-10 07:14:25.937 INFO  mpv player created (client API 2.6, wid=0x1A0784)
+2026-11-10 07:14:25.938 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:14:25.939 DEBUG mpv: start-file
+2026-11-10 07:14:26.020 INFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:14:26.120 INFO  mpv property hwdec-current = d3d11va
+
+
+PS C:\dev\litewall> .\target\release\litewall.exe --quit
+PS C:\dev\litewall> cargo fmt; cargo clippy --all-targets -- -D warnings
+>> cargo build --release
+>> $v = "$PWD\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4"
+>> .\target\release\litewall.exe --play $v --mode custom:0.3,0.1,0
+>> Start-Sleep 5
+>> Get-Content "$env:LOCALAPPDATA\LiteWall\logs\litewall.log" -Tail 60 | Select-String "mpv|file loaded|playback|rejected|zoom|hiding|error|WARN"
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
+    Finished `release` profile [optimized] target(s) in 0.09s
+
+2026-11-10 07:14:25.935 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Custom { zoom_log2: 0.3, pan_x: 0.1, pan_y: 0.0, align_x:
+0.0, align_y: 0.0 }
+2026-11-10 07:14:25.937 INFO  mpv player created (client API 2.6, wid=0x1A0784)
+2026-11-10 07:14:25.938 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:14:25.939 DEBUG mpv: start-file
+2026-11-10 07:14:26.020 INFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:14:26.120 INFO  mpv property hwdec-current = d3d11va
+2026-11-10 07:16:13.560 INFO  playback: host=0xF0BAE layout=Classic monitor=RectI32 { left: 0, top: 0, right: 2560, bottom: 1600 }
+file=C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 zoom=Custom { zoom_log2: 0.3, pan_x: 0.1, pan_y: 0.0, align_x:
+0.0, align_y: 0.0 }
+2026-11-10 07:16:13.562 INFO  mpv player created (client API 2.6, wid=0x1D0784)
+2026-11-10 07:16:13.563 INFO  mpv property hwdec-current = (unset)
+2026-11-10 07:16:13.564 DEBUG mpv: start-file
+2026-11-10 07:16:13.648 INFO  file loaded: C:\dev\litewall\target\release\Big_Buck_Bunny_1080_10s_5MB.mp4 (hwdec-current=n/a)
+2026-11-10 07:16:13.750 INFO  mpv property hwdec-current = d3d11va
+
+
+PS C:\dev\litewall>  .\target\release\litewall.exe --play "$PWD\nope.mp4" custom:0.3,0.1,0
+PS C:\dev\litewall>

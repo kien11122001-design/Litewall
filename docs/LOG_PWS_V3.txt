@@ -1,0 +1,82 @@
+PS C:\dev\litewall> cargo fmt --check
+>> cargo clippy --all-targets -- -D warnings
+>> cargo test --lib
+>> cargo build --release
+>>
+>> .\target\release\litewall.exe --test-pattern
+>> Start-Sleep 2
+>> Get-Content "$env:LOCALAPPDATA\LiteWall\logs\litewall.log" -Tail 25
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.10s
+   Compiling litewall v0.1.0 (C:\dev\litewall)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.87s
+     Running unittests src\lib.rs (target\debug\deps\litewall-275a704f5f6f34ef.exe)
+
+running 42 tests
+test core::coverage::tests::degenerate_inputs ... ok
+test core::coverage::tests::fills_monitor_shortcut ... ok
+test core::config::tests::migration_scaffold_runs_steps_in_order ... ok
+test core::config::tests::empty_file_gives_defaults_and_missing_version_is_v1 ... ok
+test core::coverage::tests::full_window_is_one ... ok
+test core::config::tests::enabled_defaults ... ok
+test core::coverage::tests::left_half_is_half ... ok
+test core::config::tests::newer_version_is_rejected_and_garbage_is_a_parse_error ... ok
+test core::coverage::tests::multiple_windows_combine ... ok
+test core::coverage::tests::negative_origin_monitor ... ok
+test core::config::tests::unknown_keys_are_ignored_and_values_sanitised ... ok
+test core::coverage::tests::no_windows_zero ... ok
+test core::config::tests::parses_the_prd_example ... ok
+test core::coverage::tests::partial_overlap_and_outside ... ok
+test core::config::tests::round_trip ... ok
+test core::geometry::tests::contains_is_half_open ... ok
+test core::geometry::tests::intersect_cases ... ok
+test core::config::tests::missing_file_and_corrupt_file ... ok
+test core::geometry::tests::parent_relative_negative_and_positive ... ok
+test core::geometry::tests::size_and_empty ... ok
+test core::config::tests::atomic_save_and_load ... ok
+test core::geometry::tests::union_with_negative_origin ... ok
+test core::monitor::tests::added_removed ... ok
+test core::monitor::tests::identical_lists_are_empty ... ok
+test core::monitor::tests::rect_or_dpi_change_including_negative_origin ... ok
+test core::monitor::tests::refresh_rate_alone_is_not_a_change_and_order_is_irrelevant ... ok
+test core::pause::tests::audio_only_only_for_visual_reasons ... ok
+test core::pause::tests::empty_is_playing_any_reason_is_paused ... ok
+test core::pause::tests::hysteresis_flapping_never_pauses ... ok
+test core::pause::tests::hysteresis_pauses_after_delay_only ... ok
+test core::pause::tests::hysteresis_resumes_after_100ms ... ok
+test core::pause::tests::overlapping_reasons_resume_only_when_all_clear ... ok
+test core::pause::tests::tracker_all_monitors_scope_copies_covered_only ... ok
+test core::pause::tests::tracker_this_monitor_scope ... ok
+test core::pause::tests::user_pause_is_sticky ... ok
+test core::zoom::tests::basic_modes ... ok
+test core::zoom::tests::custom_values_are_clamped_and_sanitised ... ok
+test core::zoom::tests::every_mode_sets_every_property ... ok
+test core::zoom::tests::switching_from_custom_resets_everything ... ok
+test logger::tests::utc_formatting ... ok
+test logger::tests::reopen_appends_and_counts_size ... ok
+test logger::tests::rotation_keeps_n_files ... ok
+
+test result: ok. 42 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+    Finished `release` profile [optimized] target(s) in 0.05s
+2026-11-10 03:05:32.196 INFO  LiteWall 0.1.0 starting
+2026-11-10 03:05:32.199 DEBUG message window 0x4F0BCE
+2026-11-10 03:05:43.305 INFO  second launch: forwarded msg=0x8001 delivered=true
+2026-11-10 03:05:43.305 INFO  quit requested
+2026-11-10 03:05:43.305 INFO  exiting with code 0
+2026-11-10 03:06:45.433 INFO  LiteWall 0.1.0 starting
+2026-11-10 03:06:45.436 DEBUG message window 0x540914
+2026-11-10 03:06:45.485 INFO  second launch: forwarded msg=0x8002 delivered=true2026-11-10 03:06:45.485 INFO  refresh requested (second launch)
+
+2026-11-10 03:06:55.493 INFO  second launch: forwarded msg=0x8001 delivered=true
+2026-11-10 03:06:55.493 INFO  quit requested
+2026-11-10 03:06:55.493 INFO  exiting with code 0
+2026-11-10 03:17:20.894 INFO  LiteWall 0.1.0 starting
+2026-11-10 03:17:20.907 DEBUG message window 0x430B84
+2026-11-10 03:17:20.955 INFO  second launch: forwarded msg=0x8002 delivered=true
+2026-11-10 03:17:20.955 INFO  refresh requested (second launch)
+2026-11-10 03:17:31.924 INFO  second launch: forwarded msg=0x8001 delivered=true
+2026-11-10 03:17:31.924 INFO  quit requested
+2026-11-10 03:17:31.925 INFO  exiting with code 0
+2026-11-10 05:46:00.972 INFO  LiteWall 0.1.0 starting
+2026-11-10 05:46:00.975 DEBUG message window 0x590882
+PS C:\dev\litewall>

@@ -1,0 +1,46 @@
+PS C:\dev\litewall\src> tree "C:\dev\litewall\src" /F /A
+Folder PATH listing for volume WinToHDD
+Volume serial number is 0000009D 0000:32F8
+C:\DEV\LITEWALL\SRC
+|   controller.rs
+|   lib.rs
+|   logger.rs
+|   main.rs
+|   runtime.rs
+|
++---core
+|       app.rs
+|       config.rs
+|       coverage.rs
+|       geometry.rs
+|       media.rs
+|       menu.rs
+|       mod.rs
+|       monitor.rs
+|       pause.rs
+|       power.rs
+|       reconcile.rs
+|       zoom.rs
+|
++---mpv
+|       ffi.rs
+|       mod.rs
+|       player.rs
+|
+\---platform
+        autostart.rs
+        desktop.rs
+        diag.rs
+        dialog.rs
+        events.rs
+        fullscreen.rs
+        instance.rs
+        message_window.rs
+        mod.rs
+        monitors.rs
+        shell.rs
+        sys.rs
+        tray.rs
+        window.rs
+
+PS C:\dev\litewall\src>

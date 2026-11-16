@@ -1,0 +1,73 @@
+
+
+/// Here is the one of the feedback I received
+
+The probe worked, and it points the leak at mpv’s video output rather than our code.
+
+Run	Window create/destroy x20	Player x20	Steady growth
+baseline (vo=gpu, d3d11)	72 → 86	153 → 377	8 handles/round
+hwdec=no	72 → 86	153 → 377	8 handles/round
+vo=null	72 → 86	153 → 196	0 handles/round
+Our window code is clean. The +14 on the window loop is a one-off and identical in all three runs.
+Decoding is not the cause. hwdec=no leaks exactly the same as the baseline.
+The leak is in the GPU video output. With vo=null the growth goes to zero, so it sits in vo=gpu with the d3d11 context, either mpv itself or the AMD driver.
+
+At about 8 handles per player lifecycle, 50 hot-plug cycles cost a few hundred handles. That’s harmless against Windows’ per-process limits, so I’d treat it as a known issue, not a blocker. If you want it gone later, the clean workaround is to keep players alive across display changes instead of destroying and recreating them.
+
+What to do next
+
+1. One more probe (~5 min), to see which layer leaks. This reuses your loop:
+
+powershell
+foreach ($o in @(@('--opt','vo=gpu-next'), @('--opt','gpu-api=opengl','--opt','gpu-context=win'))) {
+  $a = @('--probe-handles','20','--play',"$PWD\clip.mp4") + $o
+  $p = Start-Process $exe -ArgumentList $a -PassThru
+  if (-not $p.WaitForExit(90000)) { "still running"; $p | Stop-Process }
+}
+Select-String $log -Pattern 'probe (B steady|B player x)' | Select -Last 4
+
+If the OpenGL run is flat, the leak is specific to the d3d11 context. I would still not switch to it without re-running the GPU benchmark. If both leak, it’s mpv-wide or the driver, and we stop digging.
+
+Your libmpv build version isn’t recorded yet, so trying a newer build is also cheap. It closes the open M0 item (version, URL, SHA-256) at the same time.
+
+2. Reboot check for the monitor IDs. Reboot, run --list-monitors, and compare the IDs with docs/config.example.toml. This is the last open M4 box besides the leak.
+
+3. Plan update. Record the leak as a known issue (a D15 entry), tick the hot-plug item with the note “no leak in our code, ~8 handles/player in the mpv gpu VO”, and move on.
+
+Housekeeping. Your tree has stale copies: src/core/core_monitor.rs, src/platform/platform_monitors.rs and src/platform/platform_sys.rs. They aren’t in any mod.rs, so they don’t compile. They are older versions of monitor.rs, monitors.rs and sys.rs, though, and it’s easy to edit the wrong one. I’d delete them.
+
+Timeline
+
+These are estimates. I can’t see your schedule, so I’m using your pace so far (M0 to M4 in about three days).
+
+Rest of M4: about one more short session, roughly 30 to 60 minutes including the reboot.
+Testing from here: it gets lighter. After this the checks are per-feature manual tests (tray menu, file picker, autostart, pause scenarios). The heavy soak (24 h run, 20 Explorer restarts, 20 sleep/wake cycles, 50 hot-plug cycles) belongs to M8.
+M5 (tray, config, persistence): the biggest chunk before the MVP gate. I’d guess 1 to 2 days, in about four deliveries: App::update plus tray, file dialog plus autostart, restore on launch, then notifications.
+M6 (pause engine): another 1 to 2 days. The logic is already written, but the hooks and the manual scenarios (exclusive fullscreen game, borderless game, maximized unfocused window, Alt-Tab flapping) take time.
+M7 (audio): about half a day.
+
+So M5 starts after one more short session, and the MVP gate (launch, tray, pick file, quit, relaunch restores) is realistically a few days out. The M8 soak adds at least a full day of wall-clock time because of the 24 h run. 
+
+
+/// I ran the code
+
+
+
+PS C:\dev\litewall> foreach ($o in @(@('--opt','vo=gpu-next'), @('--opt','gpu-api=opengl','--opt','gpu-context=win'))) {
+>>   $a = @('--probe-handles','20','--play',"$PWD\clip.mp4") + $o
+>>   $p = Start-Process $exe -ArgumentList $a -PassThru
+>>   if (-not $p.WaitForExit(90000)) { "still running"; $p | Stop-Process }
+>> }
+>> Select-String $log -Pattern 'probe (B steady|B player x)' | Select -Last 4
+
+C:\Users\HP\AppData\Local\LiteWall\logs\litewall.log:4146:2026-11-11 13:20:24.277 INFO  probe B player x20: 153 -> 377
+handles
+C:\Users\HP\AppData\Local\LiteWall\logs\litewall.log:4147:2026-11-11 13:20:24.277 INFO  probe B steady growth after
+round 5: 8.0 handles per round
+C:\Users\HP\AppData\Local\LiteWall\logs\litewall.log:4532:2026-11-11 13:20:36.254 INFO  probe B player x20: 153 -> 487
+handles
+C:\Users\HP\AppData\Local\LiteWall\logs\litewall.log:4533:2026-11-11 13:20:36.254 INFO  probe B steady growth after
+round 5: 9.0 handles per round
+
+
+PS C:\dev\litewall>

@@ -1,0 +1,26 @@
+# LiteWall example config for the owner's three monitors (ids from `--list-monitors`).
+# Use single-quoted (literal) strings for ids and Windows paths: no escaping needed.
+# Run:   litewall.exe --config C:\dev\litewall\docs\config.example.toml
+# Edit this file, then run litewall.exe again (second launch) to apply the changes.
+version = 1
+
+# Every monitor plays this unless it has its own `file`.
+[default_profile]
+file = 'C:\dev\litewall\clip.mp4'
+
+# Primary, 2560x1600 @ 120 Hz, 150 %: fill.
+[[monitors]]
+id = '\\?\DISPLAY#BOE0BBC#5&15c019df&4&UID256#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}'
+zoom = { mode = "fill" }
+
+# Portrait 1080x1920: fit (letterbox) instead of cropping a landscape clip.
+# Uncomment `file` to give this monitor its own video.
+[[monitors]]
+id = '\\?\DISPLAY#DEL4098#5&15c019df&4&UID261#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}'
+file = 'C:\dev\litewall\other.mp4'
+zoom = { mode = "fit" }
+
+# Left 1920x1080: switched off, the normal wallpaper stays. Set enabled = true to turn it on.
+[[monitors]]
+id = '\\?\DISPLAY#UGD1302#5&15c019df&4&UID281#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}'
+enabled = true
